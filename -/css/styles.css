@@ -2984,9 +2984,9 @@ a.list-group-item.active > .badge,
     font-weight: 300; }
     .jumbotron p:last-child {
       margin-bottom: 0; }
-  .wrapper .jumbotron, .block--featured-articles figure img .jumbotron, .block--project__about .jumbotron, .block--splash .panel .jumbotron, .block--intro .panel .jumbotron {
+  .wrapper .jumbotron, .block--featured-articles figure img .jumbotron, .block--project__about .jumbotron {
     border-radius: 0 0 7.5px 7.5px; }
-  .jumbotron .wrapper, .jumbotron .block--featured-articles figure img, .block--featured-articles figure .jumbotron img, .jumbotron .block--project__about, .jumbotron .block--project__about .panel__body, .block--project__about .jumbotron .panel__body, .jumbotron .block--splash .panel, .block--splash .jumbotron .panel, .jumbotron .block--splash .panel .panel__body, .block--splash .panel .jumbotron .panel__body, .jumbotron .block--splash .panel .panel__footer, .block--splash .panel .jumbotron .panel__footer, .jumbotron .block--splash .panel .panel__extra, .block--splash .panel .jumbotron .panel__extra, .jumbotron .block--intro .panel, .block--intro .jumbotron .panel, .jumbotron .block--intro .panel .panel__body, .block--intro .panel .jumbotron .panel__body, .jumbotron .block--intro .panel .panel__footer, .block--intro .panel .jumbotron .panel__footer, .jumbotron .block--intro .panel .panel__extra, .block--intro .panel .jumbotron .panel__extra {
+  .jumbotron .wrapper, .jumbotron .block--featured-articles figure img, .block--featured-articles figure .jumbotron img, .jumbotron .block--project__about, .jumbotron .block--project__about .panel__body, .block--project__about .jumbotron .panel__body {
     max-width: 100%; }
   @media only screen and (min-width: 769px) {
     .jumbotron {
@@ -3302,16 +3302,16 @@ a.list-group__item.active, a.list-group__item.active:hover, a.list-group__item.a
       margin-bottom: 0; }
     .panel-group .panel__heading h4 {
       margin-bottom: 0; }
-  .panel__body, .block--splash .panel .panel__footer, .block--intro .panel .panel__footer {
+  .panel__body {
     padding: 0;
     color: #333333;
     clear: both; }
-    .panel__body:before, .block--splash .panel .panel__footer:before, .block--intro .panel .panel__footer:before, .panel__body:after, .block--splash .panel .panel__footer:after, .block--intro .panel .panel__footer:after {
+    .panel__body:before, .panel__body:after {
       content: " ";
       display: table; }
-    .panel__body:after, .block--splash .panel .panel__footer:after, .block--intro .panel .panel__footer:after {
+    .panel__body:after {
       clear: both; }
-    .panel__body p:last-of-type, .block--splash .panel .panel__footer p:last-of-type, .block--intro .panel .panel__footer p:last-of-type {
+    .panel__body p:last-of-type {
       margin-bottom: 0; }
   .panel__footer {
     padding: 0;
@@ -4170,23 +4170,23 @@ body.bootstrap article {
       color: white; }
   body.bootstrap article .panel header.panel__heading {
     background: #222222; }
-  body.bootstrap article .panel > .panel__body, body.bootstrap article .block--splash .panel > .panel__footer, .block--splash body.bootstrap article .panel > .panel__footer, body.bootstrap article .block--intro .panel > .panel__footer, .block--intro body.bootstrap article .panel > .panel__footer {
+  body.bootstrap article .panel > .panel__body {
     border: none; }
 
 /* Page */
 body {
   background: #363937 url(../img/body-bg.png) repeat; }
 
-.wrapper, .block--featured-articles figure img, .block--project__about, .block--project__about .panel__body, .block--splash .panel, .block--splash .panel .panel__body, .block--splash .panel .panel__footer, .block--splash .panel .panel__extra, .block--intro .panel, .block--intro .panel .panel__body, .block--intro .panel .panel__footer, .block--intro .panel .panel__extra {
+.wrapper, .block--featured-articles figure img, .block--project__about, .block--project__about .panel__body {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto; }
-  .wrapper:before, .block--featured-articles figure img:before, .block--project__about:before, .block--project__about .panel__body:before, .block--splash .panel:before, .block--splash .panel .panel__body:before, .block--splash .panel .panel__footer:before, .block--splash .panel .panel__extra:before, .block--intro .panel:before, .block--intro .panel .panel__body:before, .block--intro .panel .panel__footer:before, .block--intro .panel .panel__extra:before, .wrapper:after, .block--featured-articles figure img:after, .block--project__about:after, .block--project__about .panel__body:after, .block--splash .panel:after, .block--splash .panel .panel__body:after, .block--splash .panel .panel__footer:after, .block--splash .panel .panel__extra:after, .block--intro .panel:after, .block--intro .panel .panel__body:after, .block--intro .panel .panel__footer:after, .block--intro .panel .panel__extra:after {
+  .wrapper:before, .block--featured-articles figure img:before, .block--project__about:before, .block--project__about .panel__body:before, .wrapper:after, .block--featured-articles figure img:after, .block--project__about:after, .block--project__about .panel__body:after {
     content: " ";
     display: table; }
-  .wrapper:after, .block--featured-articles figure img:after, .block--project__about:after, .block--project__about .panel__body:after, .block--splash .panel:after, .block--splash .panel .panel__body:after, .block--splash .panel .panel__footer:after, .block--splash .panel .panel__extra:after, .block--intro .panel:after, .block--intro .panel .panel__body:after, .block--intro .panel .panel__footer:after, .block--intro .panel .panel__extra:after {
+  .wrapper:after, .block--featured-articles figure img:after, .block--project__about:after, .block--project__about .panel__body:after {
     clear: both; }
-  .navbar-fixed-top .wrapper, .navbar-fixed-top .block--featured-articles figure img, .block--featured-articles figure .navbar-fixed-top img, .navbar-fixed-top .block--project__about, .navbar-fixed-top .block--project__about .panel__body, .block--project__about .navbar-fixed-top .panel__body, .navbar-fixed-top .block--splash .panel, .block--splash .navbar-fixed-top .panel, .navbar-fixed-top .block--splash .panel .panel__body, .block--splash .panel .navbar-fixed-top .panel__body, .navbar-fixed-top .block--splash .panel .panel__footer, .block--splash .panel .navbar-fixed-top .panel__footer, .navbar-fixed-top .block--splash .panel .panel__extra, .block--splash .panel .navbar-fixed-top .panel__extra, .navbar-fixed-top .block--intro .panel, .block--intro .navbar-fixed-top .panel, .navbar-fixed-top .block--intro .panel .panel__body, .block--intro .panel .navbar-fixed-top .panel__body, .navbar-fixed-top .block--intro .panel .panel__footer, .block--intro .panel .navbar-fixed-top .panel__footer, .navbar-fixed-top .block--intro .panel .panel__extra, .block--intro .panel .navbar-fixed-top .panel__extra {
+  .navbar-fixed-top .wrapper, .navbar-fixed-top .block--featured-articles figure img, .block--featured-articles figure .navbar-fixed-top img, .navbar-fixed-top .block--project__about, .navbar-fixed-top .block--project__about .panel__body, .block--project__about .navbar-fixed-top .panel__body {
     margin-top: 0; }
 
 .content {
@@ -4222,7 +4222,8 @@ body > header {
   margin-left: 0;
   width: 100%;
   background: white;
-  border-bottom: 3px solid #ca6253; }
+  border-bottom: 3px solid #ca6253;
+  margin-bottom: 1.5rem; }
 
 /*
 
@@ -4359,7 +4360,7 @@ footer {
   background: #4a403c url(../img/footer-bg.png) repeat;
   border-top: 1px solid rgba(0, 0, 0, 0.4);
   position: relative; }
-  footer > .wrapper, .block--featured-articles figure footer > img, footer > .block--project__about, .block--project__about footer > .panel__body, .block--splash .panel .block--project__about footer > .panel__footer, .block--intro .panel .block--project__about footer > .panel__footer, .block--splash footer > .panel, .block--splash .panel footer > .panel__body, .block--splash .panel footer > .panel__footer, .block--splash .panel footer > .panel__extra, .block--intro footer > .panel, .block--intro .panel footer > .panel__body, .block--intro .panel footer > .panel__footer, .block--intro .panel footer > .panel__extra {
+  footer > .wrapper, .block--featured-articles figure footer > img, footer > .block--project__about, .block--project__about footer > .panel__body {
     padding-bottom: 1.5rem; }
   footer header {
     background: none;
@@ -4689,7 +4690,7 @@ section {
     background: url(../img/red-bg.png) repeat;
     padding: 3rem 1.5rem;
     border: 0; }
-    .block--featured-articles .wrapper, .block--featured-articles figure img, .block--featured-articles .block--project__about, .block--featured-articles .block--project__about .panel__body, .block--project__about .block--featured-articles .panel__body, .block--featured-articles .block--splash .panel, .block--splash .block--featured-articles .panel, .block--featured-articles .block--splash .panel .panel__body, .block--splash .panel .block--featured-articles .panel__body, .block--featured-articles .block--splash .panel .panel__footer, .block--splash .panel .block--featured-articles .panel__footer, .block--featured-articles .block--splash .panel .panel__extra, .block--splash .panel .block--featured-articles .panel__extra, .block--featured-articles .block--intro .panel, .block--intro .block--featured-articles .panel, .block--featured-articles .block--intro .panel .panel__body, .block--intro .panel .block--featured-articles .panel__body, .block--featured-articles .block--intro .panel .panel__footer, .block--intro .panel .block--featured-articles .panel__footer, .block--featured-articles .block--intro .panel .panel__extra, .block--intro .panel .block--featured-articles .panel__extra {
+    .block--featured-articles .wrapper, .block--featured-articles figure img, .block--featured-articles .block--project__about, .block--featured-articles .block--project__about .panel__body, .block--project__about .block--featured-articles .panel__body {
       position: relative; }
     .block--featured-articles header {
       position: absolute;
@@ -4945,7 +4946,7 @@ section {
         .block--project__about .panel__heading h1 {
           font-size: 72px;
           font-size: 4.5rem; }
-      .block--project__about .panel__body, .block--project__about .block--splash .panel .panel__footer, .block--splash .panel .block--project__about .panel__footer, .block--project__about .block--intro .panel .panel__footer, .block--intro .panel .block--project__about .panel__footer {
+      .block--project__about .panel__body {
         clear: both;
         display: block;
         float: left;
@@ -4955,17 +4956,17 @@ section {
         text-align: center;
         margin-bottom: 3rem; }
         @media only screen and (min-width: 990px) {
-          .block--project__about .panel__body, .block--project__about .block--splash .panel .panel__footer, .block--splash .panel .block--project__about .panel__footer, .block--project__about .block--intro .panel .panel__footer, .block--intro .panel .block--project__about .panel__footer {
+          .block--project__about .panel__body {
             display: block;
             float: left;
             margin-left: 25.5%;
             margin-right: -100%;
             width: 49%; } }
-        .block--project__about .panel__body p, .block--project__about .block--splash .panel .panel__footer p, .block--splash .panel .block--project__about .panel__footer p, .block--project__about .block--intro .panel .panel__footer p, .block--intro .panel .block--project__about .panel__footer p {
+        .block--project__about .panel__body p {
           color: white;
           font-size: 14px;
           font-size: 0.875rem; }
-          .block--project__about .panel__body p:last-of-type, .block--project__about .block--splash .panel .panel__footer p:last-of-type, .block--splash .panel .block--project__about .panel__footer p:last-of-type, .block--project__about .block--intro .panel .panel__footer p:last-of-type, .block--intro .panel .block--project__about .panel__footer p:last-of-type {
+          .block--project__about .panel__body p:last-of-type {
             margin-bottom: 0; }
     .block--project header {
       background: none;
@@ -5057,7 +5058,7 @@ section {
         background: url(../img/red-bg.png) repeat;
         color: white; }
       @media only screen and (min-width: 990px) {
-        .block--product__sub .wrapper, .block--product__sub .block--featured-articles figure img, .block--featured-articles figure .block--product__sub img, .block--product__sub .block--project__about, .block--product__sub .block--project__about .panel__body, .block--project__about .block--product__sub .panel__body, .block--product__sub .block--splash .panel, .block--splash .block--product__sub .panel, .block--product__sub .block--splash .panel .panel__body, .block--splash .panel .block--product__sub .panel__body, .block--product__sub .block--splash .panel .panel__footer, .block--splash .panel .block--product__sub .panel__footer, .block--product__sub .block--splash .panel .panel__extra, .block--splash .panel .block--product__sub .panel__extra, .block--product__sub .block--intro .panel, .block--intro .block--product__sub .panel, .block--product__sub .block--intro .panel .panel__body, .block--intro .panel .block--product__sub .panel__body, .block--product__sub .block--intro .panel .panel__footer, .block--intro .panel .block--product__sub .panel__footer, .block--product__sub .block--intro .panel .panel__extra, .block--intro .panel .block--product__sub .panel__extra {
+        .block--product__sub .wrapper, .block--product__sub .block--featured-articles figure img, .block--featured-articles figure .block--product__sub img, .block--product__sub .block--project__about, .block--product__sub .block--project__about .panel__body, .block--project__about .block--product__sub .panel__body {
           display: block;
           float: left;
           margin-left: 25.5%;
@@ -5394,7 +5395,7 @@ section.top-bar {
   border: 0;
   padding: 0;
   border-bottom: 1px solid black; }
-  section.top-bar .wrapper, section.top-bar .block--featured-articles figure img, .block--featured-articles figure section.top-bar img, section.top-bar .block--project__about, section.top-bar .block--project__about .panel__body, .block--project__about section.top-bar .panel__body, section.top-bar .block--splash .panel, .block--splash section.top-bar .panel, section.top-bar .block--splash .panel .panel__body, .block--splash .panel section.top-bar .panel__body, section.top-bar .block--splash .panel .panel__footer, .block--splash .panel section.top-bar .panel__footer, section.top-bar .block--splash .panel .panel__extra, .block--splash .panel section.top-bar .panel__extra, section.top-bar .block--intro .panel, .block--intro section.top-bar .panel, section.top-bar .block--intro .panel .panel__body, .block--intro .panel section.top-bar .panel__body, section.top-bar .block--intro .panel .panel__footer, .block--intro .panel section.top-bar .panel__footer, section.top-bar .block--intro .panel .panel__extra, .block--intro .panel section.top-bar .panel__extra {
+  section.top-bar .wrapper, section.top-bar .block--featured-articles figure img, .block--featured-articles figure section.top-bar img, section.top-bar .block--project__about, section.top-bar .block--project__about .panel__body, .block--project__about section.top-bar .panel__body {
     position: relative; }
   section.top-bar ul {
     margin: 0;
@@ -5443,14 +5444,14 @@ article {
   width: 100%; }
   article.article {
     padding: 4.5rem 0; }
-    article.article .wrapper, article.article .block--featured-articles figure img, .block--featured-articles figure article.article img, article.article .block--project__about, article.article .block--project__about .panel__body, .block--project__about article.article .panel__body, article.article .block--splash .panel, .block--splash article.article .panel, article.article .block--splash .panel .panel__body, .block--splash .panel article.article .panel__body, article.article .block--splash .panel .panel__footer, .block--splash .panel article.article .panel__footer, article.article .block--splash .panel .panel__extra, .block--splash .panel article.article .panel__extra, article.article .block--intro .panel, .block--intro article.article .panel, article.article .block--intro .panel .panel__body, .block--intro .panel article.article .panel__body, article.article .block--intro .panel .panel__footer, .block--intro .panel article.article .panel__footer, article.article .block--intro .panel .panel__extra, .block--intro .panel article.article .panel__extra {
+    article.article .wrapper, article.article .block--featured-articles figure img, .block--featured-articles figure article.article img, article.article .block--project__about, article.article .block--project__about .panel__body, .block--project__about article.article .panel__body {
       clear: both;
       display: block;
       float: left;
       margin-left: 0;
       width: 100%; }
       @media only screen and (min-width: 990px) {
-        article.article .wrapper, article.article .block--featured-articles figure img, .block--featured-articles figure article.article img, article.article .block--project__about, article.article .block--project__about .panel__body, .block--project__about article.article .panel__body, article.article .block--splash .panel, .block--splash article.article .panel, article.article .block--splash .panel .panel__body, .block--splash .panel article.article .panel__body, article.article .block--splash .panel .panel__footer, .block--splash .panel article.article .panel__footer, article.article .block--splash .panel .panel__extra, .block--splash .panel article.article .panel__extra, article.article .block--intro .panel, .block--intro article.article .panel, article.article .block--intro .panel .panel__body, .block--intro .panel article.article .panel__body, article.article .block--intro .panel .panel__footer, .block--intro .panel article.article .panel__footer, article.article .block--intro .panel .panel__extra, .block--intro .panel article.article .panel__extra {
+        article.article .wrapper, article.article .block--featured-articles figure img, .block--featured-articles figure article.article img, article.article .block--project__about, article.article .block--project__about .panel__body, .block--project__about article.article .panel__body {
           display: block;
           float: left;
           margin-left: 25.5%;
@@ -5460,402 +5461,17 @@ article {
       font-size: 18px;
       font-size: 1.125rem; }
 
-.panel {
-  padding: 0; }
-  .panel__heading {
-    border-bottom: none;
-    padding: 0.75rem 1.5rem; }
-    .panel__heading figure {
-      margin-bottom: 1.5rem; }
-    .panel--projects .panel__heading {
-      padding-bottom: 0; }
-    .panel--articles .panel__heading h2 {
-      color: #556789;
-      margin-bottom: 1.5rem; }
-    .panel--articles--featured .panel__heading h2 {
-      background: #556789;
-      padding: 5px 10px;
-      color: white;
-      border-radius: 5px;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      position: absolute;
-      top: 0;
-      text-align: left;
-      margin-bottom: 1.5rem; }
-    .panel--projects--featured .panel__heading h2 {
-      				/*
-      background: $brand-projects;
-      				padding: 5px 10px;
-      */
-      color: white;
-      				/*
-      border-radius: 5px;
-      				border-top-left-radius: 0;
-      				border-top-right-radius: 0;
-      */
-      position: absolute;
-      top: 0;
-      text-align: left;
-      margin-bottom: 1.5rem; }
-  .panel__body, .block--splash .panel .panel__footer, .block--intro .panel .panel__footer {
-    padding: 1.5rem; }
-    .panel__body .content, .block--splash .panel .panel__footer .content, .block--intro .panel .panel__footer .content {
-      padding: 0; }
-      .panel__body .content p, .block--splash .panel .panel__footer .content p, .block--intro .panel .panel__footer .content p {
-        margin-bottom: 0.75rem; }
-  .block--splash .panel {
-    float: none;
-    background: none;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem; }
-    .block--splash .panel img.splash {
-      display: block;
-      margin-bottom: 0.75rem; }
-      @media only screen and (min-width: 990px) {
-        .block--splash .panel img.splash {
-          margin-bottom: 0; } }
-    .block--splash .panel .panel__heading {
-      clear: both;
-      display: block;
-      float: left;
-      margin-left: 0;
-      width: 100%;
-      padding: 0;
-      text-align: center;
-      border: none; }
-      @media only screen and (min-width: 990px) {
-        .block--splash .panel .panel__heading {
-          display: block;
-          float: left;
-          margin-left: 34%;
-          margin-right: -100%;
-          width: 32%; } }
-      @media only screen and (min-width: 990px) {
-        .block--splash .panel .panel__heading {
-          margin-top: -100px;
-          position: relative;
-          z-index: 100; } }
-      .block--splash .panel .panel__heading h1 {
-        font-size: 30px;
-        font-size: 1.875rem;
-        font-family: "museo", sans-serif;
-        text-transform: none;
-        color: #ca6253; }
-    .block--splash .panel .panel__body, .block--splash .panel .panel__footer {
-      clear: both;
-      display: block;
-      float: left;
-      margin-left: 0;
-      width: 100%;
-      padding: 0;
-      text-align: center;
-      margin-bottom: 3rem; }
-      @media only screen and (min-width: 990px) {
-        .block--splash .panel .panel__body, .block--splash .panel .panel__footer {
-          display: block;
-          float: left;
-          margin-left: 25.5%;
-          margin-right: -100%;
-          width: 49%; } }
-      .block--splash .panel .panel__body p, .block--splash .panel .panel__footer p {
-        font-size: 18px;
-        font-size: 1.125rem; }
-        .block--splash .panel .panel__body p:last-of-type, .block--splash .panel .panel__footer p:last-of-type {
-          margin-bottom: 0; }
-      .block--splash .panel .panel__body ul.meta, .block--splash .panel .panel__footer ul.meta {
-        margin-top: 1.5rem;
-        margin-bottom: 0; }
-    .block--splash .panel .panel__extra {
-      clear: both;
-      display: block;
-      float: left;
-      margin-left: 0;
-      width: 100%;
-      margin-top: 1.5rem; }
-    .block--splash .panel .panel__footer {
-      background: none;
-      text-align: center;
-      border: none;
-      margin-bottom: 0; }
-      .block--splash .panel .panel__footer ul.meta {
-        margin-bottom: 0; }
-    .block--splash .panel figure {
-      text-align: center; }
-      .block--splash .panel figure img {
-        max-width: 50%;
-        display: block;
-        margin: 0 auto; }
-    .block--splash .panel figcaption {
-      font-style: normal;
-      font-size: 18px;
-      font-size: 1.125rem; }
-  .block--intro .panel {
-    float: none;
-    background: none;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem; }
-    .block--intro .panel img.splash {
-      display: block; }
-    .block--intro .panel .panel__heading {
-      clear: both;
-      display: block;
-      float: left;
-      margin-left: 0;
-      width: 100%;
-      margin-bottom: 0;
-      padding: 0;
-      text-align: center;
-      border: none; }
-      @media only screen and (min-width: 990px) {
-        .block--intro .panel .panel__heading {
-          display: block;
-          float: left;
-          margin-left: 17%;
-          margin-right: -100%;
-          width: 66%; } }
-      .block--intro .panel .panel__heading h1 {
-        font-size: 72px;
-        font-size: 4.5rem;
-        font-family: "alternate-gothic-no-2-d", sans-serif;
-        color: #ca6253; }
-    .block--intro .panel .panel__body, .block--intro .panel .panel__footer {
-      clear: both;
-      display: block;
-      float: left;
-      margin-left: 0;
-      width: 100%;
-      padding: 0;
-      text-align: center; }
-      @media only screen and (min-width: 990px) {
-        .block--intro .panel .panel__body, .block--intro .panel .panel__footer {
-          display: block;
-          float: left;
-          margin-left: 25.5%;
-          margin-right: -100%;
-          width: 49%; } }
-      .block--intro .panel .panel__body p, .block--intro .panel .panel__footer p {
-        font-size: 18px;
-        font-size: 1.125rem; }
-        .block--intro .panel .panel__body p:last-of-type, .block--intro .panel .panel__footer p:last-of-type {
-          margin-bottom: 0; }
-      .block--intro .panel .panel__body ul.meta, .block--intro .panel .panel__footer ul.meta {
-        margin-bottom: 2.25rem;
-        padding-bottom: 0.375rem;
-        display: block;
-        border-bottom: 1px dashed rgba(0, 0, 0, 0.2); }
-        .block--intro .panel .panel__body ul.meta a, .block--intro .panel .panel__footer ul.meta a {
-          color: #222222; }
-        .block--intro .panel .panel__body ul.meta i.fa, .block--intro .panel .panel__footer ul.meta i.fa {
-          color: #222222; }
-    .block--intro .panel .panel__extra {
-      clear: both;
-      display: block;
-      float: left;
-      margin-left: 0;
-      width: 100%;
-      margin-top: 1.5rem; }
-    .block--intro .panel .panel__footer {
-      background: none;
-      text-align: center;
-      border: none;
-      margin-bottom: 0;
-      margin-top: 2.25rem; }
-      .block--intro .panel .panel__footer ul.meta {
-        margin-bottom: 0; }
-      .block--intro .panel .panel__footer blockquote p {
-        font-size: 14px;
-        font-size: 0.875rem; }
-    .block--intro .panel figure {
-      text-align: center; }
-      .block--intro .panel figure img {
-        display: block;
-        margin: 0 auto; }
-    .block--intro .panel figcaption {
-      font-style: normal;
-      font-size: 24px;
-      font-size: 1.5rem; }
-  .panel--services {
-    border-top: 10px solid #5c7c81; }
-    .panel--services .panel__heading {
-      clear: both;
-      display: block;
-      float: left;
-      margin-left: 0;
-      width: 100%;
-      padding-bottom: 0;
-      margin-bottom: 0;
-      position: relative; }
-    .panel--services .panel__footer {
-      background: #5c7c81; }
-  .panel--projects {
-    border-top: 10px solid #866739; }
-    .panel--projects .panel__heading {
-      clear: both;
-      display: block;
-      float: left;
-      margin-left: 0;
-      width: 100%;
-      padding-bottom: 0;
-      margin-bottom: 0;
-      position: relative; }
-      .panel--projects .panel__heading figure {
-        max-width: 15%; }
-        .block--split .panel--projects .panel__heading figure {
-          display: none; }
-    .panel--projects .panel__footer {
-      background: #866739; }
-    .panel--projects--featured {
-      background: none;
-      border: none; }
-      .panel--projects--featured .carousel__items__item {
-        min-height: 925px; }
-      .panel--projects--featured img {
-        margin-bottom: 1.5rem; }
-      .panel--projects--featured .panel__heading {
-        padding: 4.5rem 1.5rem 1.5rem;
-        margin-bottom: 0;
-        text-align: center; }
-      .panel--projects--featured .panel__body, .panel--projects--featured .block--splash .panel .panel__footer, .block--splash .panel .panel--projects--featured .panel__footer, .panel--projects--featured .block--intro .panel .panel__footer, .block--intro .panel .panel--projects--featured .panel__footer {
-        padding: 1.5rem;
-        text-align: center; }
-        .panel--projects--featured .panel__body h2, .panel--projects--featured .block--splash .panel .panel__footer h2, .block--splash .panel .panel--projects--featured .panel__footer h2, .panel--projects--featured .block--intro .panel .panel__footer h2, .block--intro .panel .panel--projects--featured .panel__footer h2 {
-          font-size: 48px;
-          font-size: 3rem;
-          color: white;
-          line-height: normal; }
-          .panel--projects--featured .panel__body h2 small, .panel--projects--featured .block--splash .panel .panel__footer h2 small, .block--splash .panel .panel--projects--featured .panel__footer h2 small, .panel--projects--featured .block--intro .panel .panel__footer h2 small, .block--intro .panel .panel--projects--featured .panel__footer h2 small {
-            text-transform: none;
-            display: block;
-            color: #999999;
-            font-family: "museo", sans-serif;
-            font-size: 12px;
-            font-size: 0.75rem; }
-        .panel--projects--featured .panel__body p, .panel--projects--featured .block--splash .panel .panel__footer p, .block--splash .panel .panel--projects--featured .panel__footer p, .panel--projects--featured .block--intro .panel .panel__footer p, .block--intro .panel .panel--projects--featured .panel__footer p {
-          color: white; }
-      .panel--projects--featured .content {
-        clear: both;
-        display: block;
-        float: left;
-        margin-left: 0;
-        width: 100%;
-        margin-bottom: 4.5rem; }
-        @media only screen and (min-width: 990px) {
-          .panel--projects--featured .content {
-            margin-bottom: 0;
-            display: block;
-            float: left;
-            margin-left: 0;
-            margin-right: -100%;
-            width: 49%;
-            text-align: left; } }
-      .panel--projects--featured figure {
-        clear: both;
-        display: block;
-        float: left;
-        margin-left: 0;
-        width: 100%; }
-        @media only screen and (min-width: 990px) {
-          .panel--projects--featured figure {
-            clear: none;
-            display: block;
-            float: left;
-            margin-left: 51%;
-            margin-right: -100%;
-            width: 49%; } }
-        .panel--projects--featured figure img {
-          max-width: 75%;
-          margin: 0 auto; }
-  .panel--articles {
-    border-top: 10px solid #556789; }
-    .panel--articles .panel__heading {
-      clear: both;
-      display: block;
-      float: left;
-      margin-left: 0;
-      width: 100%;
-      padding-bottom: 0;
-      margin-bottom: 0;
-      position: relative; }
-      .panel--articles .panel__heading figure {
-        max-width: 15%; }
-        .block--split .panel--articles .panel__heading figure {
-          display: none; }
-    .panel--articles .panel__footer {
-      background: #556789; }
-    .panel--articles--featured img {
-      margin-bottom: 1.5rem; }
-    .panel--articles--featured .panel__heading {
-      padding: 4.5rem 1.5rem 1.5rem;
-      margin-bottom: 0;
-      padding-bottom: 0;
-      text-align: center; }
-      .panel--articles--featured .panel__heading h1 {
-        text-align: left; }
-    .panel--articles--featured .panel__body, .panel--articles--featured .block--splash .panel .panel__footer, .block--splash .panel .panel--articles--featured .panel__footer, .panel--articles--featured .block--intro .panel .panel__footer, .block--intro .panel .panel--articles--featured .panel__footer {
-      padding: 1.5rem;
-      text-align: left; }
-      .panel--articles--featured .panel__body h2, .panel--articles--featured .block--splash .panel .panel__footer h2, .block--splash .panel .panel--articles--featured .panel__footer h2, .panel--articles--featured .block--intro .panel .panel__footer h2, .block--intro .panel .panel--articles--featured .panel__footer h2 {
-        font-size: 48px;
-        font-size: 3rem;
-        color: #f4efda; }
-  .panel--casestudies {
-    border-top: 10px solid #705371; }
-    .panel--casestudies .panel__footer {
-      background: #705371; }
-  .block--left-panels .panel, .block--right-panels .panel {
+.panel__heading {
+  border-bottom: none;
+  padding: 0.75rem 1.5rem; }
+  .panel__heading figure {
+    margin-bottom: 1.5rem; }
+.panel__body {
+  padding: 1.5rem; }
+  .panel__body .content {
     padding: 0; }
-    .block--left-panels .panel__footer, .block--right-panels .panel__footer {
-      clear: both;
-      display: block;
-      float: left;
-      margin-left: 0;
-      width: 100%;
-      padding: 0.75rem 1.5rem; }
-      .block--left-panels .panel__footer p, .block--right-panels .panel__footer p {
-        margin-bottom: 0; }
-
-ul.services li {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  clear: both;
-  display: block;
-  float: left;
-  margin-left: 0;
-  width: 100%;
-  margin-bottom: 0.75rem; }
-  @media only screen and (min-width: 990px) {
-    ul.services li {
-      margin-bottom: 0; }
-      ul.services li:nth-of-type(4n+1) {
-        clear: both;
-        display: block;
-        float: left;
-        margin-left: 0;
-        margin-right: -100%;
-        width: 23.5%; }
-      ul.services li:nth-of-type(4n+2) {
-        clear: none;
-        display: block;
-        float: left;
-        margin-left: 25.5%;
-        margin-right: -100%;
-        width: 23.5%; }
-      ul.services li:nth-of-type(4n+3) {
-        clear: none;
-        display: block;
-        float: left;
-        margin-left: 51%;
-        margin-right: -100%;
-        width: 23.5%; }
-      ul.services li:nth-of-type(4n+4) {
-        clear: none;
-        display: block;
-        float: left;
-        margin-left: 76.5%;
-        margin-right: -100%;
-        width: 23.5%; } }
+    .panel__body .content p {
+      margin-bottom: 0.75rem; }
 
 table.prices {
   clear: both;
@@ -5983,7 +5599,7 @@ table.prices {
   float: left;
   margin-left: 0;
   width: 100%; }
-  .paging .wrapper, .paging .block--featured-articles figure img, .block--featured-articles figure .paging img, .paging .block--project__about, .paging .block--project__about .panel__body, .block--project__about .paging .panel__body, .paging .block--splash .panel, .block--splash .paging .panel, .paging .block--splash .panel .panel__body, .block--splash .panel .paging .panel__body, .paging .block--splash .panel .panel__footer, .block--splash .panel .paging .panel__footer, .paging .block--splash .panel .panel__extra, .block--splash .panel .paging .panel__extra, .paging .block--intro .panel, .block--intro .paging .panel, .paging .block--intro .panel .panel__body, .block--intro .panel .paging .panel__body, .paging .block--intro .panel .panel__footer, .block--intro .panel .paging .panel__footer, .paging .block--intro .panel .panel__extra, .block--intro .panel .paging .panel__extra {
+  .paging .wrapper, .paging .block--featured-articles figure img, .block--featured-articles figure .paging img, .paging .block--project__about, .paging .block--project__about .panel__body, .block--project__about .paging .panel__body {
     clear: both;
     display: block;
     float: left;
@@ -5991,13 +5607,13 @@ table.prices {
     width: 100%;
     text-align: center; }
     @media only screen and (min-width: 990px) {
-      .paging .wrapper, .paging .block--featured-articles figure img, .block--featured-articles figure .paging img, .paging .block--project__about, .paging .block--project__about .panel__body, .block--project__about .paging .panel__body, .paging .block--splash .panel, .block--splash .paging .panel, .paging .block--splash .panel .panel__body, .block--splash .panel .paging .panel__body, .paging .block--splash .panel .panel__footer, .block--splash .panel .paging .panel__footer, .paging .block--splash .panel .panel__extra, .block--splash .panel .paging .panel__extra, .paging .block--intro .panel, .block--intro .paging .panel, .paging .block--intro .panel .panel__body, .block--intro .panel .paging .panel__body, .paging .block--intro .panel .panel__footer, .block--intro .panel .paging .panel__footer, .paging .block--intro .panel .panel__extra, .block--intro .panel .paging .panel__extra {
+      .paging .wrapper, .paging .block--featured-articles figure img, .block--featured-articles figure .paging img, .paging .block--project__about, .paging .block--project__about .panel__body, .block--project__about .paging .panel__body {
         display: block;
         float: left;
         margin-left: 25.5%;
         margin-right: -100%;
         width: 49%; } }
-    .paging .wrapper ul.pager, .paging .block--featured-articles figure img ul.pager, .block--featured-articles figure .paging img ul.pager, .paging .block--project__about ul.pager, .block--project__about .paging .panel__body ul.pager, .paging .block--splash .panel ul.pager, .block--splash .paging .panel ul.pager, .block--splash .panel .paging .panel__body ul.pager, .block--splash .panel .paging .panel__footer ul.pager, .block--splash .panel .paging .panel__extra ul.pager, .paging .block--intro .panel ul.pager, .block--intro .paging .panel ul.pager, .block--intro .panel .paging .panel__body ul.pager, .block--intro .panel .paging .panel__footer ul.pager, .block--intro .panel .paging .panel__extra ul.pager {
+    .paging .wrapper ul.pager, .paging .block--featured-articles figure img ul.pager, .block--featured-articles figure .paging img ul.pager, .paging .block--project__about ul.pager, .block--project__about .paging .panel__body ul.pager {
       margin-top: 1.5rem;
       margin-bottom: 1.5rem; }
 

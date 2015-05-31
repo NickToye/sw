@@ -6,7 +6,7 @@ body > header {
 	@include gs-span(d,all);
 	background: $white;
 	border-bottom: 3px $border-style $brand-primary;
-
+	margin-bottom: rem($rhythm-unit)*2;
 }
 
 
