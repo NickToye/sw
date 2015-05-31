@@ -24,7 +24,7 @@
 	<script>try{Typekit.load();}catch(e){}</script>
 
 	<!-- GoogleFonts -->
-	<link href='http://fonts.googleapis.com/css?family=Lato|Oswald:400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Oswald:400,300' rel='stylesheet' type='text/css'>
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -36,6 +36,8 @@
 
 
 </head>
+
+
 
 	<body class="home">
 
@@ -72,10 +74,776 @@
 				<div class="wrapper">
 
 					<section class="panel">
-						<header class="panel__header">
-							<h1>Typography</h1>
-						</header>
-					</section>
+	<header class="panel__header">
+		<h1>Typography</h1>
+	</header>
+	<div class="panel__body">
+		<div class="panel__body__section">
+			<header>
+				<h2>Font Family</h2>
+				<p>A range of typefaces</p>
+			</header>
+			<p class="base-font-family"><strong>Base</strong> is Lato, sans-serif.</p>
+			<p class="base-font-family-serif"><strong>Serif</strong> is Georgia, Times New Roman,Times,serif.</p>
+			<p class="base-font-family-headings"><strong>Headings</strong> is Oswald, sans-serif.</p>
+			<p class="base-font-family-amp"><strong>Ampersand</strong> is &amp;.</p>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Font Weights</h2>
+				<p>A range of weights</p>
+			</header>
+			<p class="thin">Thin text (100).</p>
+			<p class="light">Light text (300).</p>
+			<p class="normal">Normal text (400).</p>
+			<p class="bold">Bold text (700).</p>
+			<p class="extra-bold">Extra bold text (800).</p>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Headings</h2>
+				<p>All headings including optional small text within the heading</p>
+			</header>
+			<h1>This is a H1 tag <small>With a small subtext</small></h1>
+			<h2>This is a H2 tag <small>With a small subtext</small></h2>
+			<h3>This is a H3 tag <small>With a small subtext</small></h3>
+			<h4>This is a H4 tag <small>With a <a href="#">Link</a> within small subtext</small></h4>
+			<h5>This is a H5 tag</h5>
+			<h6>This is a H6 tag</h6>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Block &amp; Text Level Elements</h2>
+				<p>Includes body copy, addresses and other miscellaneous elements.</p>
+			</header>
+				<p>Text can have <a href="#">Links</a> as well <strong>bold</strong> and <em>italic</em> elements.</p>
+				<p><small>This is small text using the <em>small</em> tag.</small></p>
+				<p>Text can also have <abbr title="this is an abbreviation">abbreviations</abbr> applied also.</p>
+				<p>Abbreviations with the .initialism class applied. <abbr title="HTML" class="initialism">HTML</abbr></span>.</p>
+				<p class="text-left">This text is left aligned.</p>
+				<p class="text-right">This text is right aligned.</p>
+				<p class="text-center">This text is centre aligned.</p>
+				<br />
+				<h3>Address</h3>
+				<address>
+					<p>
+					<strong>Pixels + Code</strong><br />
+					97 Circular Drive,<br />
+					Ewloe,<br />
+					CH5 3DA
+					</p>
+					<p><abbr title="telephone">t. </abbr>01244 556593</p>
+				</address>
+				<br />
+				<h3>Blockquotes</h3>
+				<blockquote>
+					<p>Life is pretty simple: You do some stuff. Most fails. Some works. You do more of what works. If it works big, others quickly copy it. Then you do something else. The trick is the doing something else.</p>
+					<cite>Leonardo da Vinci</cite>
+				</blockquote>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Contextual Text Elements</h2>
+				<p>Bringing in different colours to give text elements some context.</p>
+			</header>
+			<h3>Emphasis Variants</h3>
+			<p class="text-primary">Primary text color</p>
+			<p class="text-success">Success text color</p>
+			<p class="text-info">Info text color</p>
+			<p class="text-warning">Warning text color</p>
+			<p class="text-danger">Danger text color</p>
+			<br />
+			<h3>Contextual Backgrounds</h3>
+			<div class="bg-primary"><p>Primary</p></div>
+			<div class="bg-success"><p>Success</p></div>
+			<div class="bg-info"><p>Info</p></div>
+			<div class="bg-warning"><p>Warning</p></div>
+			<div class="bg-danger"><p>Danger</p></div>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Lists</h2>
+				<p>Styles and variants for unordered lists, ordered lists and definition lists</p>
+			</header>
+			<h3>Unordered</h3>
+			<ul>
+				<li>Unordered list item</li>
+				<li>Unordered list item
+					<ul>
+						<li>Sub list item</li>
+						<li>Sub list item</li>
+					</ul>
+				</li>
+				<li>Unordered list item</li>
+			</ul>
+			<br />
+			<h3>Ordered</h3>
+			<ol>
+				<li>Ordered list item</li>
+				<li>Ordered list item
+					<ol class="alpha">
+						<li>Sub list item</li>
+						<li>Sub list item</li>
+					</ol>
+				</li>
+				<li>Ordered list item</li>
+			</ol>
+			<br />
+			<h3>Unstyled</h3>
+			<ul class="list-unstyled">
+				<li>Item</li>
+				<li>Item</li>
+				<li>Item</li>
+			</ul>
+			<h3>Inline</h3>
+			<ul class="list-inline">
+				<li>Item</li>
+				<li>Item</li>
+				<li>Item</li>
+			</ul>
+			<br />
+			<h3>Definition list</h3>
+			<dl>
+				<dt>Definition title</dt>
+				<dd>Definition description</dd>
+			</dl>
+			<br />
+			<h3>Horizontal Definition list</h3>
+			<dl class="dl-horizontal">
+				<dt>Description lists</dt>
+				<dd>A description list is perfect for defining terms.</dd>
+				<dt>Euismod</dt>
+				<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+				<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+				<dt>Malesuada porta</dt>
+				<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+				<dt>Felis euismod semper eget lacinia</dt>
+				<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+			</dl>
+		</div>
+
+	</div>
+	<footer class="panel__footer">
+		<ul class="labels">
+			<li class="label label--info">CSS</li>
+			<li class="label label--info">HTML</li>
+		</ul>
+	</footer>
+</section>					<section class="panel">
+	<header class="panel__header">
+		<h1>Colours</h1>
+	</header>
+	<div class="panel__body">
+		<div class="panel__body__section">
+			<header>
+				<h2>Site Branding</h2>
+				<p>Base palette.</p>
+			</header>
+			<ul class="palette list-unstyled list-inline">
+				<li class="brand-primary">Primary</li>
+				<li class="brand-secondary">Secondary</li>
+				<li class="brand-tertiary">Tertiary</li>
+			</ul>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>States</h2>
+				<p>For various contextual states.</p>
+			</header>
+			<ul class="palette list-unstyled list-inline">
+				<li class="brand-success">Success</li>
+				<li class="brand-info">Info</li>
+				<li class="brand-warning">Warning</li>
+				<li class="brand-danger">Danger</li>
+			</ul>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Neutral Colours</h2>
+				<p>Greyscale colour palette.</p>
+			</header>
+			<ul class="palette list-unstyled list-inline">
+				<li class="gray-darker">Darker</li>
+				<li class="gray-dark">Dark</li>
+				<li class="gray">Neutral</li>
+				<li class="gray-light">Light</li>
+				<li class="gray-lighter">Lighter</li>
+				<li class="gray-lightest">Lightest</li>
+			</ul>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Social Branding</h2>
+				<p>Colours to coincide with social media branding.</p>
+			</header>
+			<ul class="palette list-unstyled list-inline">
+				<li class="brand-twitter" title="Twitter"><i class="fa fa-twitter"></i></li>
+				<li class="brand-facebook" title="Facebook"><i class="fa fa-facebook"></i></li>
+				<li class="brand-linkedin" title="LinkedIn"><i class="fa fa-linkedin"></i></li>
+				<li class="brand-pinterest" title="Pinterest"><i class="fa fa-pinterest"></i></li>
+				<li class="brand-google" title="Google+"><i class="fa fa-google"></i></li>
+				<li class="brand-youtube" title="YouTube"><i class="fa fa-youtube"></i></li>
+				<li class="brand-instagram" title="Instagram"><i class="fa fa-instagram"></i></li>
+			</ul>
+		</div>
+	</div>
+	<footer class="panel__footer">
+		<ul class="labels">
+			<li class="label label--info">CSS</li>
+			<li class="label label--info">HTML</li>
+			<li class="label label--fontawesome">Font Awesome</li>
+		</ul>
+	</footer>
+</section>					<section class="panel">
+	<header class="panel__header">
+		<h1>Images</h1>
+	</header>
+	<div class="panel__body">
+		<div class="panel__body__section">
+			<header>
+				<h2>Thumbnails</h2>
+				<p>Standard thumbnail styles.</p>
+			</header>
+			<ul class="list-unstyled list-inline">
+				<li>
+					<figure>
+						<a href="#" class=""><img class="img img--thumbnail" src="http://placehold.it/100x100" alt="..."></a>
+						<figcaption>Thumbnail Label</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<a href="#" class=""><img class="img img--thumbnail" src="http://placehold.it/100x100" alt="..."></a>
+						<figcaption>Thumbnail Label</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Image Frames</h2>
+				<p>Applying frames of different shapes to images.</p>
+			</header>
+			<ul class="list-unstyled list-inline">
+				<li>
+					<figure>
+						<a href="#"><img class="img img--rounded" src="http://placehold.it/100x100" alt="..."></a>
+						<figcaption>Rounded corners</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<a href="#"><img class="img img--circle" src="http://placehold.it/100x100" alt="..."></a>
+						<figcaption>Circular</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<footer class="panel__footer">
+		<ul class="labels">
+			<li class="label label--info">CSS</li>
+			<li class="label label--info">HTML</li>
+		</ul>
+	</footer>
+</section>					<section class="panel">
+	<header class="panel__header">
+		<h1>Tables</h1>
+	</header>
+	<div class="panel__body">
+		<div class="panel__body__section">
+			<header>
+				<h2>Basic Table</h2>
+				<p>Basic table styling.</p>
+			</header>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Leonardo</td>
+						<td>Da Vinci</td>
+						<td>@davinci</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Benjamin</td>
+						<td>Franklin</td>
+						<td>@commonsense</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Frederic</td>
+						<td>Chopin</td>
+						<td>@choppers</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Striped Table</h2>
+				<p>Table with stripes applied to alternative rows</p>
+			</header>
+			<table class="table table--striped">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Leonardo</td>
+						<td>Da Vinci</td>
+						<td>@davinci</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Benjamin</td>
+						<td>Franklin</td>
+						<td>@commonsense</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Frederic</td>
+						<td>Chopin</td>
+						<td>@choppers</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Bordered Table</h2>
+				<p>Table styled with a border</p>
+			</header>
+			<table class="table table--bordered">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Leonardo</td>
+						<td>Da Vinci</td>
+						<td>@davinci</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Benjamin</td>
+						<td>Franklin</td>
+						<td>@commonsense</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Frederic</td>
+						<td>Chopin</td>
+						<td>@choppers</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Condensed Table</h2>
+				<p>Styled to make tables more compact</p>
+			</header>
+			<table class="table table--condensed">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Leonardo</td>
+						<td>Da Vinci</td>
+						<td>@davinci</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Benjamin</td>
+						<td>Franklin</td>
+						<td>@commonsense</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Frederic</td>
+						<td>Chopin</td>
+						<td>@choppers</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Hover Table</h2>
+				<p>Enables a hover state on table rows</p>
+			</header>
+			<table class="table table--hover">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Leonardo</td>
+						<td>Da Vinci</td>
+						<td>@davinci</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Benjamin</td>
+						<td>Franklin</td>
+						<td>@commonsense</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Frederic</td>
+						<td>Chopin</td>
+						<td>@choppers</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Contextual Table</h2>
+				<p>To apply contexts to rows and cells</p>
+			</header>
+			<table class="table table--hover table--contextual">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+						<th>State (display)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Leonardo</td>
+						<td>Da Vinci</td>
+						<td>@davinci</td>
+						<td>Default</td>
+					</tr>
+					<tr class="warning">
+						<td>2</td>
+						<td>Benjamin</td>
+						<td>Franklin</td>
+						<td>@commonsense</td>
+						<td>Warning</td>
+					</tr>
+					<tr class="success">
+						<td>3</td>
+						<td>Frederic</td>
+						<td>Chopin</td>
+						<td>@choppers</td>
+						<td>Success</td>
+					</tr>
+					<tr class="danger">
+						<td>4</td>
+						<td>Steve</td>
+						<td>Jobs</td>
+						<td>@thinkdifferent</td>
+						<td>Danger</td>
+					</tr>
+					<tr class="info">
+						<td>5</td>
+						<td>Terry</td>
+						<td>Pratchett</td>
+						<td>@pratchett</td>
+						<td>Info</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<footer class="panel__footer">
+		<ul class="labels">
+			<li class="label label--info">CSS</li>
+			<li class="label label--info">HTML</li>
+		</ul>
+	</footer>
+</section>					<section class="panel">
+	<header class="panel__header">
+		<h1>Forms</h1>
+	</header>
+	<div class="panel__body">
+		<div class="panel__body__section">
+			<header>
+				<h2>Basic Form</h2>
+				<p>Providing basic, horizontal and inline form styles as well as inputs, buttons and button groups</p>
+			</header>
+			<form role="form" class="form">
+				<fieldset class="controls">
+					<legend>Optional legend</legend>
+					<label for="exampleInputEmail1" class="controls__label">Email address</label>
+					<input type="email" class="controls__control" id="exampleInputEmail1" name="exampleInputEmail1" placeholder="Enter email">
+					<p class="controls__note"><i class="fa fa-info-circle"></i>	Notes here</p>
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputPassword1" class="controls__label">Password</label>
+					<input type="password" class="controls__control" id="exampleInputPassword1" placeholder="Password">
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputFile" class="controls__label">File input</label>
+					<input type="file" class="controls__control" id="exampleInputFile">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label controls__control--checkbox">
+					<input type="checkbox"> <span>Check me out</span>
+					</label>
+				</fieldset>
+				<fieldset class="controls">
+					<h3 class="controls__label">Radio buttons</h3>
+					<div class="input-group">
+						<label class="controls__label controls__control--radio">
+							<input type="radio" name="radios" id="radio_1" value="radio_1" checked>
+							Apple
+						</label>
+						<label class="controls__label controls__control--radio">
+							<input type="radio" name="radios" id="radio_2" value="radio_2" >
+							Orange
+						</label>
+						<label class="controls__label controls__control--radio">
+							<input type="radio" name="radios" id="radio_3" value="radio_3" >
+							Banana
+						</label>
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label">Other Comments</label>
+					<textarea class="controls__control" rows="3"></textarea>
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label">Disabled Field</label>
+					<input type="text" class="controls__control" id="disabledText" disabled>
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label">Read-only Field</label>
+					<input type="text" class="controls__control" id="readOnly" placeholder="this is read only" readonly>
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label">Small Field</label>
+					<input type="text" class="controls__control input-sm" id="smallField">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label">Large Field</label>
+					<input type="text" class="controls__control input-lg" id="smallField">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label">Select something</label>
+					<select name="colors" class="controls__control">
+						<option value="blue" selected="selected">Blue</option>
+						<option value="red">Red</option>
+						<option value="green">Green</option>
+					</select>
+				</fieldset>
+				<fieldset class="controls">
+					<button type="submit" name="submit" class="btn btn--primary">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Inline Form</h2>
+				<p>Styles for an inline form that will also stack in mobile view</p>
+			</header>
+			<form role="form" class="form form--inline">
+				<fieldset class="controls">
+					<label for="exampleInputEmail2" class="sr-only controls__label">Email address</label>
+					<input type="email" class="controls__control" id="exampleInputEmail2" placeholder="Enter email">
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputPassword2" class="sr-only controls__label">Password</label>
+					<input type="password" class="controls__control" id="exampleInputPassword2" placeholder="Password">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label controls__control--checkbox">
+					<input type="checkbox"> <span>Check me out</span>
+					</label>
+				</fieldset>
+				<fieldset class="controls">
+					<button type="submit" class="btn btn--primary">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Horizontal Form</h2>
+				<p>Styles for a horizontal form that also stacks in mobile view</p>
+			</header>
+			<form role="form" class="form form--horizontal" data-bv-message="This value is not valid">
+				<fieldset class="controls">
+					<label for="exampleInputEmail2" class="controls__label">Email address</label>
+					<input type="email" class="controls__control" name="email" id="exampleInputEmail2" placeholder="Enter email">
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputStatic" class="controls__label">Static Control</label>
+					<p class="controls__static">nick@pixelsandcode.co.uk</p>
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputPassword2" class="controls__label">Password</label>
+					<input type="password" class="controls__control" id="exampleInputPassword2" placeholder="Password">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label controls__control--checkbox">
+					<input type="checkbox"> <span>Check me out</span>
+					</label>
+				</fieldset>
+				<fieldset class="controls controls__buttons">
+					<button type="submit" class="btn btn--primary">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Validation States</h2>
+				<p>Styles for validation states</p>
+			</header>
+			<form role="form" class="form">
+				<fieldset class="controls">
+					<label for="exampleInputStateless" class="controls__label">No State</label>
+					<input type="email" class="controls__control" id="exampleInputStateless" placeholder="Enter email">
+					<p class="controls__note">A block of help text that breaks onto a new line and may extend beyond one line.</p>
+				</fieldset>
+				<fieldset class="controls has-success">
+					<label for="exampleInputSuccess" class="controls__label">Success</label>
+					<input type="email" class="controls__control" id="exampleInputSuccess" placeholder="Enter email">
+					<p class="controls__note">A block of help text that breaks onto a new line and may extend beyond one line.</p>
+				</fieldset>
+				<fieldset class="controls has-warning">
+					<label for="exampleInputWarning" class="controls__label">Warning</label>
+					<input type="password" class="controls__control" id="exampleInputWarning" placeholder="Password">
+					<p class="controls__note">A block of help text that breaks onto a new line and may extend beyond one line.</p>
+				</fieldset>
+				<fieldset class="controls has-error">
+					<label for="exampleInputError" class="controls__label">Error</label>
+					<input type="password" class="controls__control" id="exampleInputError" placeholder="Password">
+					<p class="controls__note">A block of help text that breaks onto a new line and may extend beyond one line.</p>
+				</fieldset>
+				<fieldset class="controls controls__buttons">
+					<button type="submit" class="btn btn--primary">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Input Groups</h2>
+				<p>Extend form controls by adding text or buttons before, after or on both sides of any text based input</p>
+			</header>
+			<form role="form" class="form">
+				<fieldset class="controls">
+					<div class="input-group">
+						<span class="input-group__addon">@</span>
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group">
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+						<span class="input-group__addon">.00</span>
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group">
+						<span class="input-group__addon">@</span>
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+						<span class="input-group__addon">.00</span>
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group input-group__input-group-lg">
+						<span class="input-group__addon">@</span>
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group input-group__input-group-sm">
+						<span class="input-group__addon">@</span>
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<footer class="panel__footer">
+		<ul class="labels">
+			<li class="label label--info">CSS</li>
+			<li class="label label--info">HTML</li>
+		</ul>
+	</footer>
+</section>					<section class="panel">
+	<header class="panel__header">
+		<h1>Typography</h1>
+	</header>
+	<div class="panel__body">
+		<div class="panel__body__section">
+			<h1>Header 1</h1>
+			<h2>Header 2</h2>
+			<h3>Header 3</h3>
+			<h4>Header 4</h4>
+			<h5>Header 5</h5>
+			<p>This is a short paragraph with <a href="#">links</a> and other inline text elements, such as <strong>bold text</strong> and <em>italicised text</em>.</p>
+			<p>We can also <abbr title="abbreviate">abbr</abbr> text, as well as <mark>highlight</mark> and <del>delete</del> text.</p>
+		</div>
+	</div>
+	<footer class="panel__footer">
+		<ul class="labels">
+			<li class="label label--info">CSS</li>
+			<li class="label label--info">HTML</li>
+		</ul>
+	</footer>
+</section>					<section class="panel">
+	<header class="panel__header">
+		<h1>Typography</h1>
+	</header>
+	<div class="panel__body">
+		<div class="panel__body__section">
+			<h1>Header 1</h1>
+			<h2>Header 2</h2>
+			<h3>Header 3</h3>
+			<h4>Header 4</h4>
+			<h5>Header 5</h5>
+			<p>This is a short paragraph with <a href="#">links</a> and other inline text elements, such as <strong>bold text</strong> and <em>italicised text</em>.</p>
+			<p>We can also <abbr title="abbreviate">abbr</abbr> text, as well as <mark>highlight</mark> and <del>delete</del> text.</p>
+		</div>
+	</div>
+	<footer class="panel__footer">
+		<ul class="labels">
+			<li class="label label--info">CSS</li>
+			<li class="label label--info">HTML</li>
+		</ul>
+	</footer>
+</section>
 
 				</div>
 			</main>

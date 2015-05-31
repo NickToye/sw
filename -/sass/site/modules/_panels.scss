@@ -3,23 +3,43 @@
 // styles for Panels, overrides Bootstrap
 
 .panel {
+	border: 0;
+	padding: $panel-padding;
 	// Headings
-	&__heading {
-		border-bottom: none;
-		padding: rem($rhythm-unit) rem($rhythm-unit)*2;
-		figure {
-			margin-bottom: rem($rhythm-unit)*2;
+	&__header {
+		background: $panel-header-background-color;
+		border-bottom: $border-width $border-style $border-color;
+		color: $panel-default-heading-text-color;
+		padding: $panel-header-padding;
+		h1 {
+			color: inherit;
+			margin-bottom: 0;
+		}
+		p {
+			margin: 0;
 		}
 	}
 	// Body
 	&__body {
-		padding: rem($rhythm-unit)*2;
-		.content {
-			padding: 0;
-			p {
-				margin-bottom: rem($rhythm-unit);
+		padding: $panel-body-padding;
+		&__section {
+			@include gs-span(m,all);
+			padding-bottom: rem($rhythm-unit)*4;
+			border-bottom: $border-style $border-width $border-color;
+			margin-bottom: rem($rhythm-unit)*4;
+			header {
+				margin-bottom: rem($rhythm-unit)*2;
+				p {
+					color: $gray-light;
+				}
 			}
 		}
+	}
+	// Footer
+	&__footer {
+		background: $brand-tertiary;
+		border: 0;
+		padding: $panel-footer-padding;
 	}
 }
 

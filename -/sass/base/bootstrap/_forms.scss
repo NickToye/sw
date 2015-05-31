@@ -27,6 +27,7 @@
 		@include zero;
 		min-width: 0;
 		margin-bottom: rem($rhythm-unit);
+/*
 		&--left {
 			@include gs-span(m,all);
 			@include gs-media(t,min) {
@@ -60,6 +61,7 @@
 				}
 			}
 		}
+*/
 		// Legend
 		legend {
 			display: inline-block;
@@ -84,7 +86,7 @@
 				color: $brand-primary;
 			}
 		}
-		&__control--checkbox, &--control--radio {
+		&__control--checkbox, &__control--radio {
 			@include font-size($input-font-size, $line-height: false, $margin-bottom: false);
 			color: $input-color;
 			cursor: pointer;
@@ -102,19 +104,20 @@
 			position: relative;
 			display: table;
 			border-collapse: separate;
+			width: 100%;
 			&__input-group-lg {
-				.controls--control, .input-group--addon, .input-group--btn {
+				.controls__control, .input-group__addon, .input-group--btn {
 					@extend .input-lg;
 					@include font-size($font-size-large, $line-height: true, $margin-bottom: false);
 				}
 			}
 			&__input-group-sm {
-				.controls--control, .input-group--addon, .input-group--btn {
+				.controls__control, .input-group__addon, .input-group--btn {
 					@extend .input-sm;
 					@include font-size($font-size-small, $line-height: true, $margin-bottom: false);
 				}
 			}
-			&--addon, &--btn,.controls--control {
+			&__addon, &--btn,.controls__control {
 				position: relative;
 				display: table-cell;
 				margin-bottom: 0;
@@ -128,7 +131,7 @@
 				&:first-child > .btn:not(:first-child) { @include border-left-radius(0);}
 				&:last-child > .btn:not(:last-child):not(.dropdown-toggle) { @include border-right-radius(0);}
 			}
-			&--addon, &--btn {
+			&__addon, &--btn {
 				width: 1%;
 				white-space: nowrap;
 				vertical-align: middle;
@@ -139,7 +142,7 @@
 				&:first-child > .btn { border-right: 0;}
 				&:last-child > .btn { border-left: 0;}
 			}
-			&--addon {
+			&__addon {
 				padding: rem($rhythm-unit)/2 rem($rhythm-unit);
 				@include font-size($input-font-size, $line-height: false, $margin-bottom: false);
 				font-weight: normal;
@@ -151,7 +154,7 @@
 				&:first-child { border-right: 0; }
 				&:last-child { border-left: 0; }
 			}
-			.controls--control {
+			.controls__control {
 				float: left;
 				width: 100%;
 				margin-bottom: 0;
@@ -169,6 +172,7 @@
 			}
 			// Set the height of file controls to match text inputs
 			&[type="file"] {
+				background: none;
 				display: block;
 				border: 0;
 				box-shadow: none;
@@ -219,7 +223,7 @@
 			background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
 			border: $border-width $border-style $input-border-color;
 			border-radius: $input-border-radius;
-			@include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+			@include box-shadow(inset 0 0px 1px rgba(0,0,0,.075));
 			@include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
 			@include transition(all,.3s,linear);
 			// Customize the `:focus` state to imitate native WebKit styles.
@@ -318,8 +322,8 @@
 			}
 			// Input groups need that 100% width though
 			.input-group > .form-control {
-		width: 100%;
-	}
+				width: 100%;
+			}
 		    // Validation states
 		    //
 		    // Reposition the icon because it's now within a grid column and columns have
@@ -331,8 +335,11 @@
 		}
 	}
 	&--horizontal {
-	width: 100%;
-	.controls {
+		@include gs-span(m,all);
+		@include gs-media(d,min) {
+			@include gs-span(d,1,8,(1,12));
+		}
+		.controls {
 		&__label {
 			@include gs-span(d,1,2,(1,12));
 			margin-top: 0;
@@ -352,7 +359,7 @@
 			}
 		}
 		&__static {
-			@include gs-span(d,4,12,(1,12));
+			@include gs-span(d,3,12,(1,12));
 			padding-top: rem($rhythm-unit);
 			@include font-size($input-font-size, $line-height: false, $margin-bottom: false);
 
@@ -381,11 +388,11 @@
   //
   // Reposition the icon because it's now within a grid column and columns have
   // `position: relative;` on them. Also accounts for the grid gutter padding.
-  .has-feedback .form-control-feedback {
-    top: 0;
-    right: ($gutter-width / 2);
-  }
-}
+	.has-feedback .form-control-feedback {
+		top: 0;
+		right: ($gutter-width / 2);
+		}
+	}
 }
 
 

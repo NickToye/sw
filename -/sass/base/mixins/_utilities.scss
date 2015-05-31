@@ -65,6 +65,7 @@ $guide-background: $body-background-color;
 	background-color: $guide-background;
 	@include background-image(linear-gradient($guide-color 1px, transparent 1px));
 	background-size: 100% rem($rhythm-unit);
+
 }
 // Scaffold
 @mixin scaffold($block:outline) {

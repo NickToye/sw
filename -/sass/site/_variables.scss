@@ -141,8 +141,8 @@ $body-background-color:															$dark-contrast !default;
 $text-color:																	$white !default;
 
 // - Headings
-$headings-text-color:															$brand-tertiary;
-$sub-headings-text-color:														$white;
+$headings-text-color:															$brand-primary;
+$sub-headings-text-color:														$gray-darker;
 $headings-small-text-color:														$gray-light;
 
 // - Social Media Branding
@@ -173,7 +173,7 @@ $brand-fontawesome:																rgb(34,34,34);
 $brand-mixture:																	rgb(249,249,249);
 
 // - Hyperlinks
-$link-color:																	$brand-secondary !default;
+$link-color:																	$brand-primary !default;
 $link-hover-color:																darken($link-color,10%) !default;
 $title-link-color:																$brand-tertiary !default;
 $title-link-hover-color:														darken($title-link-color,10%) !default;
@@ -182,7 +182,7 @@ $title-link-hover-color:														darken($title-link-color,10%) !default;
 $blockquote-text-color:															$gray-darker;
 $blockquote-background-color:													transparent;
 $blockquote-border-color:														$gray-darker !default;
-$blockquote-border-size:														0px;
+$blockquote-border-size:														5px;
 $blockquote-border-style:														solid;
 $blockquote-cite-color:															$gray-darker;
 
@@ -265,6 +265,7 @@ $input-font-size:																14;
 $legend-font-size:																16;
 
 // - Weights
+$thin:																			100;
 $light:																			300;
 $normal:																		400;
 $semi-bold:																		600;
@@ -455,7 +456,7 @@ $caret-width-large:																5px !default;
 $form-background-color:															transparent !default;
 $form-background-border-color:													darken($form-background-color, 5%) !default;
 
-$form-label-color:																$brand-tertiary !default;
+$form-label-color:																$brand-primary !default;
 $form-note-color:																$gray !default;
 $form-note-background-color:													lighten($brand-info,30%) !default;
 $form-note-border-color:														darken($form-note-background-color,5%) !default;
@@ -464,10 +465,10 @@ $input-background-color:														rgba($gray-lightest, 1)!default;
 $input-background-focus-color:													rgba($gray-lightest, .85) !default;
 $input-background-disabled-color:												$gray-lightest !default;
 
-$input-color:																	$gray-darker !default;
-$input-border-color:															$gray-darker !default;
+$input-color:																	$gray-light !default;
+$input-border-color:															$gray-lighter !default;
 $input-border-radius:															$radius !default;
-$input-border-focus-color:														$gray-darker  !default;
+$input-border-focus-color:														$gray-light  !default;
 
 $input-color-placeholder-color:													rgba($gray-light,.4) !default;
 
@@ -661,21 +662,22 @@ $pager-disabled-color:															$pagination-disabled-color !default;
 
 // B21. Panels
 
-$panel-padding:																	rem($rhythm-unit) !default;
+$panel-padding:																	0 !default;
 $panel-background-color:														$white !default;
 $panel-text-color:																$gray-dark !default;
-$panel-body-padding:															0 !default;
-$panel-header-padding:															0 !default;
-$panel-footer-padding:															0 !default;
+$panel-body-padding:															rem($rhythm-unit)*2 !default;
+$panel-header-padding:															rem($rhythm-unit) rem($rhythm-unit)*2 !default;
+$panel-footer-padding:															rem($rhythm-unit) rem($rhythm-unit)*2 !default;
 $panel-border-radius:															0 !default;
 
 $panel-inner-border-color:														$gray-lighter  !default;
+$panel-header-background-color:													$brand-primary !default;
 $panel-footer-background-color:													$brand-tertiary !default;
 
 $panel-default-text-color:														$gray-dark !default;
 $panel-default-border-color:													$gray-dark !default;
 $panel-default-heading-background-color:										transparent !default;
-$panel-default-heading-text-color:												$brand-tertiary !default;
+$panel-default-heading-text-color:												$white !default;
 
 $panel-primary-text-color:														$white !default;
 $panel-primary-border-color:													$brand-primary !default;
@@ -734,7 +736,7 @@ $table-background-accent-color:													$gray-lightest !default;
 $table-background-hover-color:													$gray-lightest !default;
 $table-background-active-color:													$table-background-hover-color !default;
 
-$table-border-color:															$brand-secondary !default;
+$table-border-color:															$gray-lighter !default;
 
 // B25. Thumbnails/Figures
 
@@ -743,7 +745,7 @@ $thumbnail-background-color:													transparent!default;
 $thumbnail-border-color:														$gray-lighter !default;
 $thumbnail-border-radius:														$border-radius !default;
 
-$thumbnail-caption-text-color:													$white !default;
+$thumbnail-caption-text-color:													$brand-primary !default;
 $thumbnail-caption-padding:														rem($rhythm-unit)/1.5 !default;
 
 $circle-radius:																	500px !default;

@@ -1,0 +1,210 @@
+<section class="panel">
+	<header class="panel__header">
+		<h1>Forms</h1>
+	</header>
+	<div class="panel__body">
+		<div class="panel__body__section">
+			<header>
+				<h2>Basic Form</h2>
+				<p>Providing basic, horizontal and inline form styles as well as inputs, buttons and button groups</p>
+			</header>
+			<form role="form" class="form">
+				<fieldset class="controls">
+					<legend>Optional legend</legend>
+					<label for="exampleInputEmail1" class="controls__label">Email address</label>
+					<input type="email" class="controls__control" id="exampleInputEmail1" name="exampleInputEmail1" placeholder="Enter email">
+					<p class="controls__note"><i class="fa fa-info-circle"></i>	Notes here</p>
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputPassword1" class="controls__label">Password</label>
+					<input type="password" class="controls__control" id="exampleInputPassword1" placeholder="Password">
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputFile" class="controls__label">File input</label>
+					<input type="file" class="controls__control" id="exampleInputFile">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label controls__control--checkbox">
+					<input type="checkbox"> <span>Check me out</span>
+					</label>
+				</fieldset>
+				<fieldset class="controls">
+					<h3 class="controls__label">Radio buttons</h3>
+					<div class="input-group">
+						<label class="controls__label controls__control--radio">
+							<input type="radio" name="radios" id="radio_1" value="radio_1" checked>
+							Apple
+						</label>
+						<label class="controls__label controls__control--radio">
+							<input type="radio" name="radios" id="radio_2" value="radio_2" >
+							Orange
+						</label>
+						<label class="controls__label controls__control--radio">
+							<input type="radio" name="radios" id="radio_3" value="radio_3" >
+							Banana
+						</label>
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label">Other Comments</label>
+					<textarea class="controls__control" rows="3"></textarea>
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label">Disabled Field</label>
+					<input type="text" class="controls__control" id="disabledText" disabled>
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label">Read-only Field</label>
+					<input type="text" class="controls__control" id="readOnly" placeholder="this is read only" readonly>
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label">Small Field</label>
+					<input type="text" class="controls__control input-sm" id="smallField">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label">Large Field</label>
+					<input type="text" class="controls__control input-lg" id="smallField">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label">Select something</label>
+					<select name="colors" class="controls__control">
+						<option value="blue" selected="selected">Blue</option>
+						<option value="red">Red</option>
+						<option value="green">Green</option>
+					</select>
+				</fieldset>
+				<fieldset class="controls">
+					<button type="submit" name="submit" class="btn btn--primary">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Inline Form</h2>
+				<p>Styles for an inline form that will also stack in mobile view</p>
+			</header>
+			<form role="form" class="form form--inline">
+				<fieldset class="controls">
+					<label for="exampleInputEmail2" class="sr-only controls__label">Email address</label>
+					<input type="email" class="controls__control" id="exampleInputEmail2" placeholder="Enter email">
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputPassword2" class="sr-only controls__label">Password</label>
+					<input type="password" class="controls__control" id="exampleInputPassword2" placeholder="Password">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label controls__control--checkbox">
+					<input type="checkbox"> <span>Check me out</span>
+					</label>
+				</fieldset>
+				<fieldset class="controls">
+					<button type="submit" class="btn btn--primary">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Horizontal Form</h2>
+				<p>Styles for a horizontal form that also stacks in mobile view</p>
+			</header>
+			<form role="form" class="form form--horizontal" data-bv-message="This value is not valid">
+				<fieldset class="controls">
+					<label for="exampleInputEmail2" class="controls__label">Email address</label>
+					<input type="email" class="controls__control" name="email" id="exampleInputEmail2" placeholder="Enter email">
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputStatic" class="controls__label">Static Control</label>
+					<p class="controls__static">nick@pixelsandcode.co.uk</p>
+				</fieldset>
+				<fieldset class="controls">
+					<label for="exampleInputPassword2" class="controls__label">Password</label>
+					<input type="password" class="controls__control" id="exampleInputPassword2" placeholder="Password">
+				</fieldset>
+				<fieldset class="controls">
+					<label class="controls__label controls__control--checkbox">
+					<input type="checkbox"> <span>Check me out</span>
+					</label>
+				</fieldset>
+				<fieldset class="controls controls__buttons">
+					<button type="submit" class="btn btn--primary">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Validation States</h2>
+				<p>Styles for validation states</p>
+			</header>
+			<form role="form" class="form">
+				<fieldset class="controls">
+					<label for="exampleInputStateless" class="controls__label">No State</label>
+					<input type="email" class="controls__control" id="exampleInputStateless" placeholder="Enter email">
+					<p class="controls__note">A block of help text that breaks onto a new line and may extend beyond one line.</p>
+				</fieldset>
+				<fieldset class="controls has-success">
+					<label for="exampleInputSuccess" class="controls__label">Success</label>
+					<input type="email" class="controls__control" id="exampleInputSuccess" placeholder="Enter email">
+					<p class="controls__note">A block of help text that breaks onto a new line and may extend beyond one line.</p>
+				</fieldset>
+				<fieldset class="controls has-warning">
+					<label for="exampleInputWarning" class="controls__label">Warning</label>
+					<input type="password" class="controls__control" id="exampleInputWarning" placeholder="Password">
+					<p class="controls__note">A block of help text that breaks onto a new line and may extend beyond one line.</p>
+				</fieldset>
+				<fieldset class="controls has-error">
+					<label for="exampleInputError" class="controls__label">Error</label>
+					<input type="password" class="controls__control" id="exampleInputError" placeholder="Password">
+					<p class="controls__note">A block of help text that breaks onto a new line and may extend beyond one line.</p>
+				</fieldset>
+				<fieldset class="controls controls__buttons">
+					<button type="submit" class="btn btn--primary">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Input Groups</h2>
+				<p>Extend form controls by adding text or buttons before, after or on both sides of any text based input</p>
+			</header>
+			<form role="form" class="form">
+				<fieldset class="controls">
+					<div class="input-group">
+						<span class="input-group__addon">@</span>
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group">
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+						<span class="input-group__addon">.00</span>
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group">
+						<span class="input-group__addon">@</span>
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+						<span class="input-group__addon">.00</span>
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group input-group__input-group-lg">
+						<span class="input-group__addon">@</span>
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group input-group__input-group-sm">
+						<span class="input-group__addon">@</span>
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<footer class="panel__footer">
+		<ul class="labels">
+			<li class="label label--info">CSS</li>
+			<li class="label label--info">HTML</li>
+		</ul>
+	</footer>
+</section>

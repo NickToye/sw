@@ -15,7 +15,7 @@ th {
 
 .table {
 	width: 100%;
-	margin-bottom: $base-line-height;
+	margin-bottom: rem($rhythm-unit)*2;
 	// Cells
 	> thead,
 	> tbody,
@@ -68,6 +68,9 @@ th {
 	// - Bordered
 	&--bordered {
 	border: 1px solid $table-border-color;
+		> thead {
+			background: $table-border-color;
+		}
 		> thead,
 		> tbody,
 		> tfoot {
@@ -108,6 +111,19 @@ th {
 			}
 		}
 	}
+
+	// - Contextual
+	&--contextual {
+		> tbody,
+		> tfoot {
+			> tr {
+			> th,
+				> td {
+					border: 0;
+				}
+			}
+		}
+	}
 }
 
 // - Table cell sizing
@@ -139,8 +155,8 @@ table {
 @include table-row-variant('active', $table-background-active-color);
 @include table-row-variant('success', $state-success-background-color);
 @include table-row-variant('info', $state-info-background-color);
-@include table-row-variant('warning', $state-warning-background-color);
-@include table-row-variant('danger', $state-danger-background-color);
+@include table-row-variant('warning', $state-warning-background-color, $white);
+@include table-row-variant('danger', $state-danger-background-color, $white);
 
 
 // Responsive tables

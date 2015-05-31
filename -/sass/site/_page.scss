@@ -3,7 +3,7 @@
 // specific layout and modules
 
 html {
-// 	@include baseline-guide;
+	@include baseline-guide;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 }
 
 .wrapper {
-	width: 100%;
+	width: 90%;
 	max-width: $max-width;
 	margin: 0 auto;
 	@include clearfix;

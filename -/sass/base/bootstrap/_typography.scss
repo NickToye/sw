@@ -119,7 +119,7 @@ a {
 // - Misc
 small,
 .small  { @include font-size($font-size-small, $line-height: true, $margin-bottom: true); }
-cite    { font-style: normal; }
+cite    { font-style: italic; border-bottom: 1px dotted $abbr-border-color; }
 
 // - Abbreviations and acronyms
 abbr[title],
@@ -186,6 +186,10 @@ ol {
 	ul,
 	ol {
 		margin-bottom: 0;
+		margin-left: rem($rhythm-unit);
+	}
+	&.alpha {
+		list-style-type: lower-alpha;
 	}
 }
 
@@ -252,29 +256,21 @@ dd {
 blockquote {
 	width: 100%;
 	background: $blockquote-background-color;
-	padding: 0 2%;
+	padding: 0 1%;
 	margin: rem($rhythm-unit)*2 0;
 	@include font-size($blockquote-font-size,$line-height:false,$margin-bottom:false);
 	border-left: $blockquote-border-size $blockquote-border-style $blockquote-border-color;
 	text-align: left;
 	font-style: italic;
-	section.block--project & {
-		border-left: 5px $blockquote-border-style $white;
-
-		p {
-			color: $white;
-			padding: 0 2%;
-			&:first-of-type {
-				@include font-size($blockquote-font-size,$line-height:false,$margin-bottom:false);
-			}
-		}
+	footer {
+		background: none;
+		border: none;
+		padding: 0;
+		margin: rem($rhythm-unit) 0 0;
+		@include font-size($font-size-small, $line-height: true, $margin-bottom: false);
 		cite {
-			color: $white;
-			padding-left: 0;
-			&:before {
-				content: "- ";
-			}
-
+			color: $blockquote-cite-color;
+			font-style: italic;
 		}
 	}
 	p,
@@ -282,23 +278,11 @@ blockquote {
 	ol {
 		color: $blockquote-text-color;
 		@include font-size($blockquote-font-size,$line-height:false,$margin-bottom:false);
-		padding: 0 5%;
 
 		font-weight: $normal;
 		font-family: $base-font-family;
-		&:last-of-type {
-			margin-bottom: 0 !important;
-		}
 	}
-	cite {
-		clear: both;
-		margin: rem($rhythm-unit)*1 0;
-		padding-left: 5%;
-		display: block;
-		@include font-size($font-size-small, $line-height: true, $margin-bottom: false);
-		color: $blockquote-cite-color;
 
-	}
 	small.contact {
 		color: $white;
 		a {
@@ -316,10 +300,9 @@ blockquote {
 
 // - Addresses
 address {
-	@include font-size(22, $line-height: false, $margin-bottom: true);
+	@include font-size($p, $line-height: false, $margin-bottom: true);
 	p {
 		font-style: normal;
-		line-height: 1.2;
 		color: $gray-light;
 		strong {
 			color: rgb(27,28,33);
@@ -344,6 +327,7 @@ p {
 	&.base-font-family-code { font-family: $base-font-family-code;}
 	&.base-font-family-amp { font-family: $base-font-family-amp; font-style: italic;}
 	strong { font-weight: $bold;}
+	&.thin { font-weight: $thin;}
 	&.light { font-weight: $light;}
 	&.normal { font-weight: $normal;}
 	&.semi-bold { font-weight: $semi-bold;}
