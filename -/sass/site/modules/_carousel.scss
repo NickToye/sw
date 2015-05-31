@@ -1,0 +1,17 @@
+// Carousel
+// ---------------------------
+// Styles for the carousel module, overrides Bootstrap
+
+.carousel {
+
+	figure {
+		z-index: 3000;
+		position: relative;
+	}
+	&__control {
+		display: none;
+		@include gs-media(t,min) {
+			display: block;
+		}
+	}
+}

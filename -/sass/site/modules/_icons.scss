@@ -1,0 +1,18 @@
+// Icons
+// ---------------------------
+// Styles for the icon module
+
+
+
+i.fa {
+	color: $white;
+	@include transition(all,.3s,ease);
+
+}
+
+a {
+	i.fa {
+		color: $link-color;
+		&:hover { color: $link-hover-color;}
+	}
+}

@@ -1,0 +1,91 @@
+// Page
+// ---------------------------
+// specific layout and modules
+
+html {
+// 	@include baseline-guide;
+}
+
+body {
+	background: $body-background-color url(../img/body-bg.png) repeat;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: $max-width;
+	margin: 0 auto;
+	@include clearfix;
+	.navbar-fixed-top & {
+		margin-top: 0;
+	}
+}
+
+.content {
+	@include gs-span(m,all);
+	padding: rem($rhythm-unit);
+}
+
+%sectioned {
+	padding: rem($rhythm-unit)*2;
+	border-top: $border-width $border-style rgba($white,.1);
+	border-bottom: $border-width $border-style rgba($black,.3);
+	&:first-of-type {
+		border-top: none;
+	}
+	&:last-of-type {
+		border-bottom: none;
+	}
+
+}
+
+%ridged {
+	border-top: $border-width $border-style rgba($white,.1);
+	border-bottom: $border-width $border-style rgba($black,.3);
+	&:first-child {
+		border-top: none;
+	}
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+%ridged-vert {
+	border-left: $border-width $border-style rgba($white,.1);
+	border-right: $border-width $border-style rgba($black,.3);
+	&:first-child {
+		border-left: none;
+	}
+	&:last-child {
+		border-right: none;
+	}
+}
+
+/* Layout */
+
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/main";
+@import "layout/aside";
+@import "layout/footer";
+@import "layout/section";
+
+/* Modules */
+@import "modules/carousel";
+@import "modules/banners";
+@import "modules/gallery";
+@import "modules/blog";
+@import "modules/twitter";
+@import "modules/newsletter-form";
+@import "modules/contact";
+@import "modules/socials";
+@import "modules/icons";
+@import "modules/articles";
+@import "modules/panels";
+@import "modules/prices";
+@import "modules/lists";
+@import "modules/paging";
+
+/* Placeholders */
+
+
+

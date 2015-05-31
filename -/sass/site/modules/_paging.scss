@@ -1,0 +1,18 @@
+// Paging
+// ---------------------------
+// Styles for the paging module
+
+.paging {
+	@include gs-span(m,all);
+	.wrapper {
+		@include gs-span(m,all);
+		@include gs-media(d,min) {
+			@include gs-span(d,4,9);
+		}
+		text-align: center;
+		ul.pager {
+			margin-top: rem($rhythm-unit)*2;
+			margin-bottom: rem($rhythm-unit)*2;
+		}
+	}
+}

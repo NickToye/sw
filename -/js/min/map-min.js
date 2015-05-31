@@ -1,0 +1,1 @@
+$(document).ready(function(){function e(){var e=new google.maps.LatLng(45.430817,12.331516),o={center:e,zoom:14},n=new google.maps.Marker({position:e,map:a,title:"Venice"}),a=new google.maps.Map(document.getElementById("map-canvas"),o);n.setMap(a)}google.maps.event.addDomListener(window,"load",e)});

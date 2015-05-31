@@ -1,0 +1,113 @@
+// Navigation
+// ---------------------------
+// styles for <nav>
+
+/*
+
+
+@mixin nav-colours($colour) {
+	span.index { color: $colour; }
+	a:hover {
+		color: $colour;
+	}
+}
+*/
+
+@mixin nav-active($page) {
+	body.#{$page} & li.#{$page} a {
+		color: $brand-primary;
+	}
+}
+
+span.index {
+	display: none;
+}
+
+nav {
+	font-family: $base-font-family-headings;
+	text-transform: none;
+
+	li {
+		@include zero;
+		a {
+			@include font-size($navbar-font-size,$line-height:false,$margin-bottom:false);
+			padding: 0;
+			font-weight: $normal;
+			font-family: $base-font-family;
+			@include transition(all,.2s,linear);
+			span.index {
+				margin-right: rem($rhythm-unit);
+			}
+			&:hover {
+				color: $brand-primary;
+			}
+		}
+		/*
+&.home { @include nav-colours($brand-home);}
+		&.projects { @include nav-colours($brand-projects);}
+		&.services { @include nav-colours($brand-services);}
+		&.about { @include nav-colours($brand-about);}
+		&.articles { @include nav-colours($brand-articles);}
+		&.casestudies { @include nav-colours($brand-casestudies);}
+		&.contact { @include nav-colours($brand-contact);}
+*/
+	}
+
+
+&.navbar {
+		text-transform: none;
+		@include nav-active(home);
+		@include nav-active(projects);
+		@include nav-active(products);
+		@include nav-active(about-us);
+		@include nav-active(articles);
+		@include nav-active(contact);
+		border: none;
+		min-height: rem($navbar-height);
+		width: 100%;
+		max-width: $max-width;
+		margin: 0 auto;
+		padding: rem($rhythm-unit);
+		float: none;
+		.container-fluid {
+			padding: 0;
+			max-width: 100%;
+		}
+	}
+	.navbar__nav {
+		@include gs-media(t,min) {
+		}
+
+	}
+	.navbar__collapse {
+		position: relative;
+	}
+	a.brand {
+		position: relative;
+		z-index: 2000;
+		padding: 0;
+		@include font-size($brand-font-size,$line-height: true, $margin-bottom: false);
+		text-decoration: none;
+		&:hover,
+		&:focus {
+			color: $navbar-default-brand-hover-color;
+			background-color: $navbar-default-brand-hover-background-color;
+			text-decoration: none;
+		}
+
+		display: inline-block;
+		@include gs-media(t,min) {
+			float: left;
+			.navbar > .container &,
+			.navbar > .container-fluid & {
+				margin-left: -$navbar-padding-horizontal;
+			}
+		}
+		img {
+			max-height: rem($navbar-height)*2;
+			width: 96px;
+			height: 96px;
+		}
+	}
+}
+

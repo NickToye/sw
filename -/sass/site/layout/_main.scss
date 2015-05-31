@@ -1,0 +1,22 @@
+// Main
+// ---------------------------
+// styles for <main>
+
+main {
+	@include gs-span(m,all);
+	// padding: rem($rhythm-unit)*4 rem($rhythm-unit)*2;
+	@include gs-media(t,min) {
+		clear: none;
+
+	}
+// 	margin-bottom: rem($rhythm-unit);
+	@include gs-media(m,max) {
+		> .block {
+			padding: 0 rem($rhythm-unit)*2;
+		}
+	}
+
+	.inner {
+		@include gs-span(m,all);
+	}
+}

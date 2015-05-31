@@ -1,0 +1,250 @@
+// Footer
+// ---------------------------
+// styles for <footer>
+
+footer {
+	@include gs-span(m,all);
+// 	@extend %sectioned;
+	border: none;
+	padding: rem($rhythm-unit)*2 0 0;
+	margin: 0;
+	background: rgb(74, 64, 60) url(../img/footer-bg.png) repeat;
+	border-top: $border-width $border-style rgba($black,.4);
+	> .wrapper {
+		padding-bottom: rem($rhythm-unit)*2;
+	}
+	header {
+		background: none;
+		border: none;
+		padding: rem($rhythm-unit)*3 0;
+		@include gs-span(m,all);
+		@include gs-media(d,min) {
+			@include gs-span(d,4,9);
+		}
+		h1 {
+			color: $white;
+			@include font-size($font-size-jumbo,$line-height:false,$margin-bottom:false);
+		}
+	}
+	h2 {
+		margin-bottom: rem($rhythm-unit)*2;
+	}
+	i.fa {
+		color: $white;
+	}
+	blockquote i.fa {
+		color: $blockquote-text-color;
+	}
+	section {
+		border: none;
+// 		margin-bottom: rem($rhythm-unit)*3;
+		h2 {
+			color: $white;
+		}
+		@include gs-span(m,all);
+		@include gs-media(d,min) {
+			&:nth-of-type(3n+1) {
+				clear: both;
+				@include gs-span(d,1,4);
+			}
+			&:nth-of-type(3n+2) {
+				clear: none;
+				@include gs-span(d,5,8);
+			}
+			&:nth-of-type(3n+3) {
+				clear: none;
+				@include gs-span(d,9,12);
+			}
+		}
+
+
+
+		// Dribbble
+		&.dribbble {
+			p {
+				clear: both;
+			}
+		}
+
+		// Twitter
+		&.twitter {
+
+			a {
+				color: $link-color;
+				&:hover {
+					color: $link-hover-color;
+				}
+			}
+			img {
+				border-radius: 3px;
+			}
+		}
+
+		// Instagram
+		&.instagram {
+			li {
+				margin-bottom: gs-gutter(d,false,true);
+				&:nth-child(3n+1) {
+					clear: both;
+					@include gs-span(d,1,4);
+				}
+				&:nth-child(3n+2) {
+					clear: none;
+					@include gs-span(d,5,8);
+				}
+				&:nth-child(3n+3) {
+					clear: none;
+					@include gs-span(d,9,12);
+				}
+			}
+
+
+			p {
+				clear: both;
+			}
+		}
+
+		// Articles
+		&.articles {
+
+			img {
+				box-shadow: none;
+			}
+		}
+
+		// Tools
+		&.tools {
+
+			ul li {
+				height: 128px;
+
+				&:nth-child(4n+1) {
+					clear: both;
+					@include gs-span(d,1,3);
+				}
+				&:nth-child(4n+2) {
+					clear: none;
+					@include gs-span(d,4,6);
+				}
+				&:nth-child(4n+3) {
+					clear: none;
+					@include gs-span(d,7,9);
+				}
+				&:nth-child(4n+4) {
+					clear: none;
+					@include gs-span(d,10,12);
+				}
+				position: relative;
+				a {
+					@include vertical-align();
+					position: absolute;
+// 					padding: rem($rhythm-unit);
+				}
+
+			}
+		}
+
+		// Campaign Monitor
+		&.campaignmonitor {
+			fieldset.controls {
+				margin-bottom: rem($rhythm-unit)*2;
+			}
+
+		}
+		&.socials {
+
+			i.fa {
+				@include font-size(24,$line-height:false,$margin-bottom:false);
+
+			}
+			ul i.fa {
+				color: rgba($black,.3);
+				&:hover {
+					color: $link-hover-color;
+				}
+			}
+		}
+
+		// Pinterest
+		&.pinterest {
+
+		}
+
+		// Facebook
+		&.facebook {
+
+			iframe {
+				background: $white;
+			}
+		}
+
+		// Copyright
+		&.copyright {
+			@include gs-span(m,all);
+			clear: both;
+			color: $white;
+			border-top: $border-width $border-style rgba($black,.4);
+			background: $brand-tertiary url(../img/body-bg.png) repeat;
+			margin-bottom: 0;
+			p {
+				margin-bottom: 0;
+				@include font-size($font-size-small,$line-height:false,$margin-bottom:false);
+			}
+		}
+	}
+
+	position: relative;
+	a.btn--top {
+		position: absolute;
+		bottom: 13px;
+		right: 13px;
+	}
+
+}
+
+
+.dribbble-shots {
+	&__shot {
+		margin-bottom: gs-gutter(d,false,true);
+		@include gs-media(d,min) {
+			&:nth-child(3n+1) {
+				clear: both;
+				@include gs-span(d,1,4);
+			}
+			&:nth-child(3n+2) {
+				clear: none;
+				@include gs-span(d,5,8);
+			}
+			&:nth-child(3n+3) {
+				clear: none;
+				@include gs-span(d,9,12);
+			}
+		}
+
+		img {
+			border: $border-style 1px rgba($black,.4);
+		}
+	}
+}
+
+
+
+.instagram {
+	.snapgram {
+
+		padding: 0;
+		@include gs-media(d,min) {
+			a {
+				display: block;
+				width: 128px;
+				height: 96px;
+				overflow: hidden;
+				border: $border-style 1px rgba($black,.4);
+			}
+		}
+		img {
+// 			border: $border-style 1px rgba($black,.4);
+		}
+
+	}
+}

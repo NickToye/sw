@@ -1,0 +1,156 @@
+// Modals
+// ---------------------------
+// Bootstrap Javascript Component
+
+// Kill the scroll on the body
+.modal-open {
+  overflow: hidden;
+}
+
+// Container that the modal scrolls within
+.modal {
+	display: none;
+	overflow: auto;
+	overflow-y: scroll;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: $zindex-modal;
+	-webkit-overflow-scrolling: touch;
+	// Prevent Chrome on Windows from adding a focus outline. For details, see
+	// https://github.com/twbs/bootstrap/pull/10951.
+	outline: 0;
+	// When fading in the modal, animate it to slide down
+	&.fade .modal__dialog {
+		@include translate(0, -25%);
+		@include transition-transform(0.3s ease-out);
+	}
+	&.in .modal__dialog { @include translate(0, 0)}
+	// Shell div to position the modal with bottom padding
+	&__dialog {
+		position: relative;
+		width: $modal-medium;
+		margin: 30px auto;
+		&--full {
+			width: auto;
+			height: 100vh;
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			margin: 0;
+			padding: 40px;
+		}
+		&--lg {
+			width: $modal-large;
+		}
+		&--md {
+			width: $modal-medium;
+		}
+		&--sm {
+			width: $modal-small;
+		}
+	}
+	// Actual modal
+	&__content {
+		position: relative;
+		background-color: $modal-content-background-color;
+		border: none;
+		border-radius: 0;
+
+		background-clip: padding-box;
+		// Remove focus outline from opened modal
+		outline: none;
+		height: 100%;
+	}
+	.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+	.btn--close {
+		position: absolute;
+		top: -40px;
+		right: -40px;
+		width: 40px;
+		height: 40px;
+		background: $brand-secondary;
+		border: none;
+		@include transition(all,.3s,linear);
+		&:hover {
+			background: $brand-tertiary;
+		}
+		i.fa {
+			color: $white;
+		}
+	}
+	// Modal Header
+	&__header {
+		padding: $modal-title-padding;
+		border-bottom: 1px solid $modal-header-border-color;
+		position: relative;
+		// Close icon
+		.btn--close {
+			position: absolute;
+			top: 15px;
+			right: 20px;
+		}
+	}
+	// Modal body
+	&__body {
+		@include clearfix;
+		clear: both;
+		position: relative;
+		padding: $modal-inner-padding;
+
+	}
+	// Modal footer
+	&__footer {
+// 		margin-top: 15px;
+		padding: $modal-inner-padding;
+		text-align: right; // right align buttons
+		border-top: 1px solid $modal-footer-border-color;
+		@include clearfix(); // clear it in case folks use .pull-* classes on buttons
+		// Properly space out buttons
+		.btn + .btn {
+			margin-left: 5px;
+			margin-bottom: 0; // account for input[type="submit"] which gets the bottom margin like all other inputs
+		}
+		// but override that for button groups
+		.btn-group .btn + .btn {
+			margin-left: -1px;
+		}
+		// and override it for block buttons as well
+		.btn-block + .btn-block {
+			margin-left: 0;
+		}
+	}
+}
+// Modal background
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: $zindex-modal-background;
+	background-color: $modal-backdrop-background-color;
+	// Fade for backdrop
+	&.fade { @include opacity(0); }
+	&.in { @include opacity($modal-backdrop-opacity); }
+}

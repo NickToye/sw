@@ -1,0 +1,11 @@
+// Aside
+// ---------------------------
+// styles for <aside>
+
+aside {
+	@include gs-span(m,all);
+	@include gs-media(d,min) {
+		@include gs-span(d,9,12);
+
+	}
+}

@@ -1,0 +1,144 @@
+// Prices
+// ---------------------------
+// styles for Price lists
+
+table.prices {
+	@include gs-span(m,all);
+	background: $white;
+	border-radius: $radius;
+	@include gs-media(d,min) {
+		@include gs-span(d,4,9);
+	}
+	thead, tbody {
+		width: 100%;
+		display: block;
+	}
+	thead {
+		th, td {
+			padding: rem($rhythm-unit)*2;
+			text-align: center;
+
+		}
+		th {
+			color: $white;
+			border-right: 0;
+			&:nth-of-type(1) {
+				border-top-left-radius: $radius;
+				background: $brand-primary;
+				border-right: $border-width $border-style darken($brand-primary,10%);
+			}
+			&:nth-of-type(2) {
+				background: $brand-services;
+				border-right: $border-width $border-style darken($brand-services,10%);
+			}
+			&:nth-of-type(3) {
+				border-top-right-radius: $radius;
+				background: $brand-articles;
+			}
+		}
+	}
+	tr {
+		width: 100%;
+		display: block;
+
+		th, td {
+			@include gs-span(m,all);
+			margin-bottom: 0;
+			border-top: $border-width $border-style $border-color;
+
+			@include gs-media(d,min) {
+				&:nth-of-type(3n+1) {
+					clear: both;
+					@include gs-span(db,1,4,(1,12));
+				}
+				&:nth-of-type(3n+2) {
+					clear: none;
+					@include gs-span(db,5,8,(1,12));
+				}
+				&:nth-of-type(3n+3) {
+					clear: none;
+					@include gs-span(db,9,12,(1,12));
+				}
+			}
+		}
+		td {
+			@include gs-media(d,min) {
+				&:nth-of-type(3n+1) {
+					border-right: $border-width $border-style $border-color;
+				}
+				&:nth-of-type(3n+2) {
+					border-right: $border-width $border-style $border-color;
+				}
+				&:nth-of-type(3n+3) {
+					@include gs-span(db,9,12,(1,12));
+				}
+			}
+			padding: rem($rhythm-unit);
+			text-align: center;
+			@include font-size($p,$line-height:false,$margin-bottom:false);
+		}
+
+		&:nth-of-type(1) {
+			th {
+				border-bottom: 0;
+			}
+		}
+
+		&.price {
+			td {
+				@include font-size($font-size-jumbo,$line-height:false,$margin-bottom:false);
+				sup {
+					@include font-size($p,$line-height:false,$margin-bottom:false);
+					vertical-align: super;
+					padding-right: 5px;
+				}
+				&:nth-of-type(1) {
+					color: $brand-primary;
+				}
+				&:nth-of-type(2) {
+					color: $brand-services;
+				}
+				&:nth-of-type(3) {
+					color: $brand-articles;
+				}
+			}
+		}
+
+
+
+		&.footer {
+			td {
+				@mixin price-buttons($button-color) {
+					background-color: $button-color;
+					border-color: darken($button-color,15%);
+					&:hover {
+						background-color: darken($button-color,8%);
+					}
+				}
+				&:nth-of-type(1) {
+					.btn {
+						@include price-buttons($brand-basic);
+					}
+				}
+				&:nth-of-type(2) {
+					.btn {
+						@include price-buttons($brand-premium);
+					}
+				}
+				&:nth-of-type(3) {
+					.btn {
+						@include price-buttons($brand-advanced);
+					}
+				}
+			}
+		}
+	}
+
+	ul {
+		padding: rem($rhythm-unit)*2;
+		list-style: none;
+		li {
+			text-align: left;
+		}
+	}
+}
