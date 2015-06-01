@@ -1,9 +1,6 @@
 $(function(){
 
-	// Match Heights
-	$('.matchHeight').matchHeight();
-	$('.block--catalog article').matchHeight();
-	$('.block--featured-projects article').matchHeight();
+
 	// Scroll Top
 	initScrollToTop = function() {
 	$("#back-top").on('click', function(e) {
@@ -22,18 +19,18 @@ $(function(){
 		$('.instagram > ul').fadeIn();
 	});
 
-	// Dribbble
-    var playerId = "pixelscode";
-    $.jribbble.getShotsByPlayerId(playerId, function(data){
-        var shots = data.shots;
-        var h = '';
-        $(shots).each(function(i, shot){
-            h += '<div class="dribbble-shots__shot">';
-            h += '<a href="' + shot.url + '" target="_blank"><img src="' + shot.image_url + '" width="800" height="600"></a>';
-            h += '</div>';
-        });
-        $('.dribbble-shots').html(h);
-    }, {per_page: 3});
+	// Buttons
+	$('#loading-example-btn')
+	.click(function () {
+		var btn = $(this)
+		btn.button('loading')
+		setTimeout(function () {
+			btn.button('reset')
+		}, 3000)
+	});
+
+	// Popovers
+	$('[data-toggle="popover"]').popover()
 
     // Tooltips
     $('[data-toggle="tooltip"]').tooltip()

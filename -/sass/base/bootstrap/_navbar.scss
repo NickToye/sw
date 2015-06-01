@@ -143,11 +143,12 @@
 			margin: 0;
 		}
 		@include gs-media(d,min) {
-			height: 96px;
-			line-height: 96px;
+// 			height: rem($navbar-height);
+// 			line-height: $navbar-height;
 		}
 		> li > a {
 			color: $navbar-default-link-color;
+			@include font-size($navbar-font-size,$line-height:false,$margin-bottom:false);
 			&:hover,
 			&:focus {
 				color: $navbar-default-link-hover-color;
@@ -223,10 +224,12 @@
 				margin: 0;
 				> li {
 					// float: left;
+/*
 					> a {
 						padding-top: 0;
 						padding-bottom: 0;
 					}
+*/
 				}
 				&.navbar__right:last-child {
 					margin-right: -$navbar-padding-horizontal;

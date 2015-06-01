@@ -27,6 +27,16 @@
 		&__heading {
 			margin: 0 0 5px;
 		}
+		p {
+			margin-bottom: rem($rhythm-unit);
+			&:last-of-type {
+				margin-bottom: rem($rhythm-unit);
+			}
+		}
+		.media,
+		.media .media {
+			margin-top: rem($rhythm-unit);
+		}
 	}
 	// For images and videos, set to block
 	&__object {

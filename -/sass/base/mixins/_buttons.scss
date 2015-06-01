@@ -124,7 +124,7 @@
 // -------------------------
 @mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
 	padding: $padding-vertical $padding-horizontal;
-	font-size: $p;
+	@include font-size($font-size,$line-height:false,$margin-bottom:false);
 	line-height: $line-height;
 	border-radius: $border-radius;
 }
@@ -178,6 +178,9 @@
 	}
 	i.fa {
 		color: $icon;
+	}
+	& + .dropdown-toggle {
+		background: lighten($background,10%);
 	}
 }
 // Copyright 2013 Harry Roberts

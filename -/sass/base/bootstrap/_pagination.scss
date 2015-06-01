@@ -100,18 +100,18 @@
 		> span {
 			display: inline-block;
 			padding: 5px 14px;
-// 			background-color: $pager-background-color;
-// 			border: 1px solid $pager-border-color;
-// 			border-radius: $pager-border-radius;
+			background-color: $pager-background-color;
+			border: 1px solid $pager-border-color;
+			border-radius: $pager-border-radius;
 			text-decoration: none;
 		}
 		> a:hover,
 		> a:focus {
 			text-decoration: none;
-// 			background-color: $pager-hover-background-color;
+			background-color: $pager-hover-background-color;
 		}
 		i.fa {
-			color: $white;
+			color: $brand-primary;
 			&.fa-caret-right {
 				padding-left: rem($rhythm-unit);
 				padding-right: 0;

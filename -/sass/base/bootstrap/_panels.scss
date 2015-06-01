@@ -51,7 +51,7 @@
 		color: $panel-text-color;
 		clear: both;
 		@include clearfix();
-		p {
+		> p {
 			&:last-of-type {
 				margin-bottom: 0;
 			}
@@ -67,8 +67,8 @@
 	.sub-section {
 		@include clearfix;
 		@include gs-span(m,all);
-		margin-bottom: rem($rhythm-unit);
-		padding-bottom: rem($rhythm-unit);
+		margin-bottom: rem($rhythm-unit)*2;
+		padding-bottom: rem($rhythm-unit)*2;
 		border-bottom: $border-width $border-style $gray-lighter;
 		&:last-of-type { @include zero;}
 	}
@@ -206,26 +206,34 @@
 // the help of our collapse JavaScript plugin.
 .panel-group {
 	margin-bottom: $base-line-height;
+
 	// Tighten up margin so it's only between panels
-	&__panel {
+
+	.panel {
 		margin-bottom: 0;
 		border-radius: $panel-border-radius;
 		overflow: hidden; // crop contents when collapsed
 		+ .panel-group__panel {
 			margin-top: 5px;
 		}
-		&.panel-body {
+		.panel__body {
 			border-top: 1px solid $panel-inner-border-color;
+			padding: rem($rhythm-unit);
 		}
-		&.panel-heading {
+		.panel__heading {
 			border-bottom: 0;
-			+ .panel-collapse .panel-body {
-				border-top: 1px solid $panel-inner-border-color;
-			}
+			margin-bottom: 0;
+			padding: rem($rhythm-unit);
 		}
-		&.panel-footer {
+/*
+		.panel-collapse  {
+			border-top: 1px solid $panel-inner-border-color;
+			padding: rem($rhythm-unit);
+		}
+*/
+		.panel__footer {
 			border-top: 0;
-			+ .panel-collapse .panel-body {
+			+ .panel-collapse .panel__body {
 				border-bottom: 1px solid $panel-inner-border-color;
 			}
 		}

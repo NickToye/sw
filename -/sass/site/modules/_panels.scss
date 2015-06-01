@@ -27,6 +27,11 @@
 			padding-bottom: rem($rhythm-unit)*4;
 			border-bottom: $border-style $border-width $border-color;
 			margin-bottom: rem($rhythm-unit)*4;
+			&:last-of-type {
+				padding-bottom: 0;
+				border: none;
+				margin-bottom: 0;
+			}
 			header {
 				margin-bottom: rem($rhythm-unit)*2;
 				p {
@@ -41,5 +46,7 @@
 		border: 0;
 		padding: $panel-footer-padding;
 	}
+
+
 }
 

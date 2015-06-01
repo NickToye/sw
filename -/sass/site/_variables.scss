@@ -219,7 +219,7 @@ $state-warning-text-color:														rgb(138,109,59) !default;
 $state-warning-background-color:												$brand-warning !default;
 $state-warning-border-color:													darken(adjust-hue($state-warning-background-color, -10), 5%) !default;
 
-$state-danger-text-color:														rgb(169,68,66) !default;
+$state-danger-text-color:														$white !default;
 $state-danger-background-color:													$brand-danger !default;
 $state-danger-border-color: 													darken(adjust-hue($state-danger-background-color, -10), 5%) !default;
 
@@ -350,9 +350,9 @@ $badge-border-radius:															10px !default;
 $breadcrumb-padding-vertical:													rem($rhythm-unit)/2 !default;
 $breadcrumb-padding-horizontal:													rem($rhythm-unit) !default;
 
-$breadcrumb-background-color:													transparent !default;
+$breadcrumb-background-color:													$gray-lightest !default;
 $breadcrumb-background-border-color:											darken($breadcrumb-background-color, 6.5%) !default;
-$breadcrumb-text-color:															$gray-lighter !default;
+$breadcrumb-text-color:															$gray !default;
 
 $breadcrumb-active-color:														$brand-primary !default;
 
@@ -365,10 +365,10 @@ $breadcrumb-separator:															"/" !default;
 // B7. Buttons
 
 $btn-font-weight:																normal !default;
-$button-radius:																	0 !default;
+$button-radius:																	$radius !default;
 
-$btn-default-color:																$white !default;
-$btn-default-background-color:													rgb(122,115,107) !default;
+$btn-default-color:																$gray-dark !default;
+$btn-default-background-color:													$gray-lighter !default;
 $btn-default-border-color:														$gray-light !default;
 
 $btn-primary-color:																$white !default;
@@ -379,8 +379,8 @@ $btn-secondary-color:															$gray-dark !default;
 $btn-secondary-background-color:												$brand-secondary !default;
 $btn-secondary-border-color:													darken($btn-secondary-background-color, 5%) !default;
 
-$btn-tertiary-color:															$white!default;
-$btn-tertiary-background-color:													rgb(77,61,59) !default;
+$btn-tertiary-color:															$gray-dark !default;
+$btn-tertiary-background-color:													$brand-tertiary !default;
 $btn-tertiary-border-color:														darken($btn-tertiary-background-color, 5%) !default;
 
 $btn-dark-color:																$white;
@@ -431,15 +431,15 @@ $pre-scrollable-max-height:														340px !default;
 
 // B11. Dropdowns
 $dropdown-background-color:														$white !default;
-$dropdown-border-color:															darken($dropdown-background-color, 5%) !default;
+$dropdown-border-color:															darken($dropdown-background-color, 10%) !default;
 
 $dropdown-fallback-border-color:												$gray-lighter !default;
 
-$dropdown-divider-background-color:												$gray-lighter !default;
+$dropdown-divider-background-color:												darken($dropdown-background-color, 10%) !default;
 
 $dropdown-link-color:															$gray-dark !default;
 $dropdown-link-hover-color:														darken($gray-dark, 5%) !default;
-$dropdown-link-hover-background-color:											$gray-lightest !default;
+$dropdown-link-hover-background-color:											rgba($gray-lightest, .5) !default;
 
 $dropdown-link-active-color:													$component-active-color !default;
 $dropdown-link-active-background-color:											$component-active-background-color !default;
@@ -506,9 +506,9 @@ $label-link-hover-color:														$white !default;
 $label-font-size:																75% !default;
 
 // B15. List Group
-$list-group-background-color:													transparent !default;
-$list-group-border-color:														transparent !default;
-$list-group-border-radius:														0 !default;
+$list-group-background-color:													$gray-lightest !default;
+$list-group-border-color:														$gray-lighter !default;
+$list-group-border-radius:														$radius !default;
 
 $list-group-hover-background-color:												transparent !default;
 $list-group-active-color:														$component-active-color !default;
@@ -536,6 +536,7 @@ $modal-content-fallback-border-color:											$gray-light !default;
 $modal-backdrop-background-color:												$black !default;
 $modal-backdrop-opacity:														.7 !default;
 $modal-header-border-color:														$gray-lighter !default;
+$modal-header-background-color:													$brand-primary !default;
 $modal-footer-border-color:														$modal-header-border-color !default;
 
 $modal-large:																	gs-width(d,1,10,false,true) !default;
@@ -545,7 +546,7 @@ $modal-small:																	gs-width(d,1,3,false,true) !default;
 // B18. Navbar
 
 // Basics of a navbar
-$navbar-height:																	$rhythm-unit*4 !default;
+$navbar-height:																	$rhythm-unit !default;
 $navbar-margin-bottom:															$base-line-height !default;
 $navbar-border-radius:															$border-radius !default;
 $navbar-padding-horizontal:														rem($rhythm-unit)*2 !default;
@@ -553,7 +554,7 @@ $navbar-padding-vertical:														rem($rhythm-unit)  !default;
 $navbar-collapse-max-height:													340px !default; // Not currently used
 
 $navbar-default-color:															$gray-lightest !default;
-$navbar-default-background-color:												transparent !default;
+$navbar-default-background-color:												$gray-lightest !default;
 $navbar-default-border-color:													darken($navbar-default-background-color, 6.5%) !default;
 
 // Navbar links
@@ -633,20 +634,20 @@ $nav-pills-active-link-hover-color:												$component-active-color !default;
 
 // B20. Pagination
 $pagination-color:																$link-color !default;
-$pagination-background-color:													none !default;
-$pagination-border-color:														none !default;
+$pagination-background-color:													rgba($gray-lightest,.5) !default;
+$pagination-border-color:														$gray-light !default;
 
 $pagination-hover-color:														$link-hover-color !default;
-$pagination-hover-background-color:												none !default;
+$pagination-hover-background-color:												$gray-lighter !default;
 $pagination-hover-border-color:													none !default;
 
-$pagination-active-color:														$white !default;
-$pagination-active-background-color:											none !default;
-$pagination-active-border-color:												none !default;
+$pagination-active-color:														$link-hover-color !default;
+$pagination-active-background-color:											$pagination-hover-background-color !default;
+$pagination-active-border-color:												$pagination-hover-border-color !default;
 
 $pagination-disabled-color:														$gray-light !default;
-$pagination-disabled-background-color:											$white !default;
-$pagination-disabled-border-color:												$gray-lighter !default;
+$pagination-disabled-background-color:											$pagination-background-color !default;
+$pagination-disabled-border-color:												$pagination-hover-border-color !default;
 
 // -Pager
 $pager-background-color:														$pagination-background-color !default;

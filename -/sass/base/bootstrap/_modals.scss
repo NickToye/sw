@@ -85,22 +85,23 @@
 }
 	.btn--close {
 		position: absolute;
-		top: -40px;
-		right: -40px;
-		width: 40px;
-		height: 40px;
-		background: $brand-secondary;
+		top: -20px;
+		right: -20px;
+
+		opacity: 1;
 		border: none;
 		@include transition(all,.3s,linear);
-		&:hover {
-			background: $brand-tertiary;
-		}
+
 		i.fa {
 			color: $white;
+			&:hover {
+				color: darken($white,10%);
+			}
 		}
 	}
 	// Modal Header
 	&__header {
+		background: $modal-header-background-color;
 		padding: $modal-title-padding;
 		border-bottom: 1px solid $modal-header-border-color;
 		position: relative;
@@ -109,6 +110,9 @@
 			position: absolute;
 			top: 15px;
 			right: 20px;
+		}
+		h3 {
+			color: $white;
 		}
 	}
 	// Modal body

@@ -47,7 +47,7 @@
 // Dividers (basically an hr) within dropdowns and nav lists
 @mixin nav-divider($color: #e5e5e5) {
 	height: 1px;
-	margin: rem($rhythm-unit)/3 0;
+// 	margin: rem($rhythm-unit)/3 0;
 	overflow: hidden;
 	background-color: $color;
 }

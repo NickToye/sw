@@ -39,7 +39,7 @@
 
 
 
-	<body class="home">
+	<body class="styles">
 
 			<header>
 	<nav class="navbar navbar--default" role="navigation">
@@ -116,6 +116,8 @@
 				<h2>Block &amp; Text Level Elements</h2>
 				<p>Includes body copy, addresses and other miscellaneous elements.</p>
 			</header>
+			<div class="sub-section">
+				<h3>Basic text</h3>
 				<p>Text can have <a href="#">Links</a> as well <strong>bold</strong> and <em>italic</em> elements.</p>
 				<p><small>This is small text using the <em>small</em> tag.</small></p>
 				<p>Text can also have <abbr title="this is an abbreviation">abbreviations</abbr> applied also.</p>
@@ -123,7 +125,8 @@
 				<p class="text-left">This text is left aligned.</p>
 				<p class="text-right">This text is right aligned.</p>
 				<p class="text-center">This text is centre aligned.</p>
-				<br />
+			</div>
+			<div class="sub-section">
 				<h3>Address</h3>
 				<address>
 					<p>
@@ -134,92 +137,105 @@
 					</p>
 					<p><abbr title="telephone">t. </abbr>01244 556593</p>
 				</address>
-				<br />
+			</div>
+			<div class="sub-section">
 				<h3>Blockquotes</h3>
 				<blockquote>
 					<p>Life is pretty simple: You do some stuff. Most fails. Some works. You do more of what works. If it works big, others quickly copy it. Then you do something else. The trick is the doing something else.</p>
 					<cite>Leonardo da Vinci</cite>
 				</blockquote>
+			</div>
 		</div>
 		<div class="panel__body__section">
 			<header>
 				<h2>Contextual Text Elements</h2>
 				<p>Bringing in different colours to give text elements some context.</p>
 			</header>
-			<h3>Emphasis Variants</h3>
-			<p class="text-primary">Primary text color</p>
-			<p class="text-success">Success text color</p>
-			<p class="text-info">Info text color</p>
-			<p class="text-warning">Warning text color</p>
-			<p class="text-danger">Danger text color</p>
-			<br />
-			<h3>Contextual Backgrounds</h3>
-			<div class="bg-primary"><p>Primary</p></div>
-			<div class="bg-success"><p>Success</p></div>
-			<div class="bg-info"><p>Info</p></div>
-			<div class="bg-warning"><p>Warning</p></div>
-			<div class="bg-danger"><p>Danger</p></div>
+			<div class="sub-section">
+				<h3>Emphasis Variants</h3>
+				<p class="text-primary">Primary text color</p>
+				<p class="text-success">Success text color</p>
+				<p class="text-info">Info text color</p>
+				<p class="text-warning">Warning text color</p>
+				<p class="text-danger">Danger text color</p>
+			</div>
+			<div class="sub-section">
+				<h3>Contextual Backgrounds</h3>
+				<div class="bg-primary"><p>Primary</p></div>
+				<div class="bg-success"><p>Success</p></div>
+				<div class="bg-info"><p>Info</p></div>
+				<div class="bg-warning"><p>Warning</p></div>
+				<div class="bg-danger"><p>Danger</p></div>
+			</div>
 		</div>
 		<div class="panel__body__section">
 			<header>
 				<h2>Lists</h2>
 				<p>Styles and variants for unordered lists, ordered lists and definition lists</p>
 			</header>
-			<h3>Unordered</h3>
-			<ul>
-				<li>Unordered list item</li>
-				<li>Unordered list item
-					<ul>
-						<li>Sub list item</li>
-						<li>Sub list item</li>
-					</ul>
-				</li>
-				<li>Unordered list item</li>
-			</ul>
-			<br />
-			<h3>Ordered</h3>
-			<ol>
-				<li>Ordered list item</li>
-				<li>Ordered list item
-					<ol class="alpha">
-						<li>Sub list item</li>
-						<li>Sub list item</li>
-					</ol>
-				</li>
-				<li>Ordered list item</li>
-			</ol>
-			<br />
-			<h3>Unstyled</h3>
-			<ul class="list-unstyled">
-				<li>Item</li>
-				<li>Item</li>
-				<li>Item</li>
-			</ul>
-			<h3>Inline</h3>
-			<ul class="list-inline">
-				<li>Item</li>
-				<li>Item</li>
-				<li>Item</li>
-			</ul>
-			<br />
-			<h3>Definition list</h3>
-			<dl>
-				<dt>Definition title</dt>
-				<dd>Definition description</dd>
-			</dl>
-			<br />
-			<h3>Horizontal Definition list</h3>
-			<dl class="dl-horizontal">
-				<dt>Description lists</dt>
-				<dd>A description list is perfect for defining terms.</dd>
-				<dt>Euismod</dt>
-				<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-				<dd>Donec id elit non mi porta gravida at eget metus.</dd>
-				<dt>Malesuada porta</dt>
-				<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-				<dt>Felis euismod semper eget lacinia</dt>
-				<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-			</dl>
+			<div class="sub-section">
+				<h3>Unordered</h3>
+				<ul>
+					<li>Unordered list item</li>
+					<li>Unordered list item
+						<ul>
+							<li>Sub list item</li>
+							<li>Sub list item</li>
+						</ul>
+					</li>
+					<li>Unordered list item</li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Ordered</h3>
+				<ol>
+					<li>Ordered list item</li>
+					<li>Ordered list item
+						<ol class="alpha">
+							<li>Sub list item</li>
+							<li>Sub list item</li>
+						</ol>
+					</li>
+					<li>Ordered list item</li>
+				</ol>
+			</div>
+			<div class="sub-section">
+				<h3>Unstyled</h3>
+				<ul class="list-unstyled">
+					<li>Item</li>
+					<li>Item</li>
+					<li>Item</li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Inline</h3>
+				<ul class="list-inline">
+					<li>Item</li>
+					<li>Item</li>
+					<li>Item</li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Definition list</h3>
+				<dl>
+					<dt>Definition title</dt>
+					<dd>Definition description</dd>
+				</dl>
+			</div>
+			<div class="sub-section">
+				<h3>Horizontal Definition list</h3>
+				<dl class="dl-horizontal">
+					<dt>Description lists</dt>
+					<dd>A description list is perfect for defining terms.</dd>
+					<dt>Euismod</dt>
+					<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+					<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+					<dt>Malesuada porta</dt>
+					<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+					<dt>Felis euismod semper eget lacinia</dt>
+					<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+				</dl>
+			</div>
 		</div>
 
 	</div>
@@ -760,39 +776,454 @@
 				<h2>Input Groups</h2>
 				<p>Extend form controls by adding text or buttons before, after or on both sides of any text based input</p>
 			</header>
-			<form role="form" class="form">
+			<div class="sub-section">
+				<form role="form" class="form">
+					<fieldset class="controls">
+						<div class="input-group">
+							<span class="input-group__addon">@</span>
+							<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+						</div>
+					</fieldset>
+					<fieldset class="controls">
+						<div class="input-group">
+							<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+							<span class="input-group__addon">.00</span>
+						</div>
+					</fieldset>
+					<fieldset class="controls">
+						<div class="input-group">
+							<span class="input-group__addon">@</span>
+							<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+							<span class="input-group__addon">.00</span>
+						</div>
+					</fieldset>
+					<fieldset class="controls">
+						<div class="input-group input-group__input-group-lg">
+							<span class="input-group__addon">@</span>
+							<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+						</div>
+					</fieldset>
+					<fieldset class="controls">
+						<div class="input-group input-group__input-group-sm">
+							<span class="input-group__addon">@</span>
+							<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+						</div>
+					</fieldset>
+				</form>
+			</div>
+
+			<div class="sub-section">
+				<form role="form" class="form">
+				<h3>Checkboxes and Radios</h3>
 				<fieldset class="controls">
 					<div class="input-group">
-						<span class="input-group__addon">@</span>
+						<span class="input-group__addon">
+							<input type="checkbox">
+						</span>
 						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
 					</div>
 				</fieldset>
 				<fieldset class="controls">
 					<div class="input-group">
-						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
-						<span class="input-group__addon">.00</span>
-					</div>
-				</fieldset>
-				<fieldset class="controls">
-					<div class="input-group">
-						<span class="input-group__addon">@</span>
-						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
-						<span class="input-group__addon">.00</span>
-					</div>
-				</fieldset>
-				<fieldset class="controls">
-					<div class="input-group input-group__input-group-lg">
-						<span class="input-group__addon">@</span>
-						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
-					</div>
-				</fieldset>
-				<fieldset class="controls">
-					<div class="input-group input-group__input-group-sm">
-						<span class="input-group__addon">@</span>
+						<span class="input-group__addon">
+							<input type="radio">
+						</span>
 						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
 					</div>
 				</fieldset>
 			</form>
+			</div>
+			<div class="sub-section">
+				<form role="form" class="form">
+				<h3>Button Addons</h3>
+				<fieldset class="controls">
+					<div class="input-group">
+						<span class="input-group__btn">
+							<button class="btn btn--success" type="button">Go!</button>
+						</span>
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group">
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+						<span class="input-group__btn">
+							<button class="btn btn--danger" type="button">Danger!</button>
+						</span>
+					</div>
+				</fieldset>
+			</form>
+			</div>
+			<div class="sub-section">
+				<form role="form" class="form">
+				<h3>Buttons with dropdowns</h3>
+				<fieldset class="controls">
+					<div class="input-group">
+						<span class="input-group__btn dropdown">
+							<button type="button" class="btn btn--primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+							<ul class="dropdown__menu" role="menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</span>
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group">
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+						<span class="input-group__btn dropdown">
+							<button type="button" class="btn btn--primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+							<ul class="dropdown__menu" role="menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</span>
+					</div>
+				</fieldset>
+			</form>
+			</div>
+			<div class="sub-section">
+				<form role="form" class="form">
+				<h3>Segmented Buttons</h3>
+				<fieldset class="controls">
+					<div class="input-group">
+						<span class="input-group__btn dropdown">
+							<button class="btn btn--info" type="button">Info!</button>
+							<button type="button" class="btn btn--info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+							<ul class="dropdown__menu" role="menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</span>
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+					</div>
+				</fieldset>
+				<fieldset class="controls">
+					<div class="input-group">
+						<input type="text" class="controls__control" name="" id="exampleUsername" placeholder="Enter username">
+						<span class="input-group__btn dropdown">
+							<button class="btn btn--info" type="button">Info!</button>
+							<button type="button" class="btn btn--info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+							<ul class="dropdown__menu" role="menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</span>
+					</div>
+				</fieldset>
+			</form>
+			</div>
+		</div>
+		<div class="panel__body__section">
+			<div class="sub-section">
+				<header>
+					<h2>Buttons</h2>
+					<p>A selection of buttons in various states.</p>
+				</header>
+				<button type="button" class="btn btn--default">Default</button>
+				<button type="button" class="btn btn--primary">Primary</button>
+				<button type="button" class="btn btn--secondary">Secondary</button>
+				<button type="button" class="btn btn--tertiary">Tertiary</button>
+				<button type="button" class="btn btn--success">Success</button>
+				<button type="button" class="btn btn--info">Info</button>
+				<button type="button" class="btn btn--warning">Warning</button>
+				<button type="button" class="btn btn--danger">Danger</button>
+				<button type="button" class="btn btn--link">Link</button>
+				<button type="button" id="loading-example-btn" data-loading-text="Loading..." class="btn btn--primary">Loading state</button>
+				<button type="button" id="loading-example-btn" data-toggle="button" class="btn btn--secondary">Toggle</button>
+			</div>
+			<div class="sub-section">
+				<h3>Sizes</h3>
+				<button type="button" class="btn btn--primary btn--lg">Large Button</button>
+				<button type="button" class="btn btn--primary">Default Button</button>
+				<button type="button" class="btn btn--primary btn--sm">Small Button</button>
+				<button type="button" class="btn btn--primary btn--xs">Extra Small Button</button>
+			</div>
+			<div class="sub-section">
+				<h3>Active State</h3>
+				<button type="button" class="btn btn--primary active">Primary Button</button>
+			</div>
+			<div class="sub-section">
+				<h3>Disabled State</h3>
+				<button type="button" class="btn btn--primary" disabled="disabled">Primary Button</button>
+			</div>
+			<div class="sub-section">
+				<h3>Button tags</h3>
+				<a class="btn btn--default" href="#" role="button">Link</a>
+				<button class="btn btn--default" type="submit">Button</button>
+				<input class="btn btn--default" type="button" value="Input">
+				<input class="btn btn--default" type="submit" value="Submit">
+			</div>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Button Groups</h2>
+				<p>Grouping buttons together.</p>
+			</header>
+			<div class="sub-section">
+				<h3>Basic example</h3>
+				<div class="btn-group">
+					<button type="button" class="btn btn--default">Left</button>
+					<button type="button" class="btn btn--default">Middle</button>
+					<button type="button" class="btn btn--default">Right</button>
+				</div>
+			</div>
+			<div class="sub-section">
+				<h3>Button Toolbar</h3>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group">
+						<button type="button" class="btn btn--default">1</button>
+						<button type="button" class="btn btn--default">2</button>
+						<button type="button" class="btn btn--default">3</button>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn--default">4</button>
+						<button type="button" class="btn btn--default">5</button>
+						<button type="button" class="btn btn--default">6</button>
+						<button type="button" class="btn btn--default">7</button>
+						<button type="button" class="btn btn--default active">8</button>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn--default">9</button>
+						<button type="button" class="btn btn--default">10</button>
+					</div>
+				</div>
+			</div>
+			<div class="sub-section">
+				<h3>Sizing</h3>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group btn-group--lg">
+						<button type="button" class="btn btn--default">Left</button>
+						<button type="button" class="btn btn--default">Middle</button>
+						<button type="button" class="btn btn--default">Right</button>
+					</div>
+				</div>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group ">
+						<button type="button" class="btn btn--default">Left</button>
+						<button type="button" class="btn btn--default">Middle</button>
+						<button type="button" class="btn btn--default">Right</button>
+					</div>
+				</div>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group btn-group--sm">
+						<button type="button" class="btn btn--default">Left</button>
+						<button type="button" class="btn btn--default">Middle</button>
+						<button type="button" class="btn btn--default">Right</button>
+					</div>
+				</div>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group btn-group--xs">
+						<button type="button" class="btn btn--default">Left</button>
+						<button type="button" class="btn btn--default">Middle</button>
+						<button type="button" class="btn btn--default">Right</button>
+					</div>
+				</div>
+			</div>
+			<div class="sub-section">
+				<h3>Nesting</h3>
+				<div class="btn-group">
+					<button type="button" class="btn btn--default">1</button>
+					<button type="button" class="btn btn--default">2</button>
+					<div class="btn-group dropdown">
+						<button type="button" class="btn btn--default dropdown-toggle" data-toggle="dropdown">
+							Dropdown
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown__menu" role="menu">
+							<li><a href="#">Dropdown link</a></li>
+							<li><a href="#">Dropdown link</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sub-section">
+				<h3>Vertical Variation</h3>
+				<div class="btn-group-vertical">
+					<button type="button" class="btn btn--default">1</button>
+					<button type="button" class="btn btn--default">2</button>
+					<div class="btn-group dropdown">
+						<button type="button" class="btn btn--default dropdown-toggle" data-toggle="dropdown">
+							Dropdown
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown__menu" role="menu">
+							<li><a href="#">Dropdown link</a></li>
+							<li><a href="#">Dropdown link</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sub-section">
+				<h3>Justified Button Groups</h3>
+				<div class="btn-group btn-group--justified">
+					<div class="btn-group">
+						<a href="#" class="btn btn--default">Link</a>
+					</div>
+					<div class="btn-group">
+						<a href="#" class="btn btn--default">Link</a>
+					</div>
+					<div class="btn-group">
+						<a href="#" class="btn btn--default">Link</a>
+					</div>
+				</div>
+				<div class="btn-group btn-group--justified">
+					<div class="btn-group">
+						<button type="button" class="btn btn--default">Button</button>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn--default">Button</button>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn--default">Button</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Button Dropdowns</h2>
+				<p>Using any button to trigger a dropdown menu.</p>
+			</header>
+			<div class="sub-section">
+				<h3>Single Button</h3>
+				<div class="btn-group dropdown">
+					<button type="button" class="btn btn--default dropdown-toggle" data-toggle="dropdown">
+						Action <span class="caret"></span>
+					</button>
+					<ul class="dropdown__menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="btn-group dropdown">
+					<button type="button" class="btn btn--primary dropdown-toggle" data-toggle="dropdown">
+						Action <span class="caret"></span>
+					</button>
+					<ul class="dropdown__menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sub-section">
+				<h3>Split Button Dropdowns</h3>
+				<div class="btn-group dropdown">
+					<button type="button" class="btn btn--danger">Action</button>
+					<button type="button" class="btn btn--danger dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown__menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="btn-group dropdown">
+					<button type="button" class="btn btn--success">Action</button>
+					<button type="button" class="btn btn--success dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown__menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sub-section">
+				<h3>Sizing</h3>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group dropdown">
+						<button type="button" class="btn btn--success btn--lg">Action</button>
+						<button type="button" class="btn btn--success btn--lg dropdown-toggle" data-toggle="dropdown">
+							<span class="caret"></span>
+							<span class="sr-only">Toggle Dropdown</span>
+						</button>
+						<ul class="dropdown__menu" role="menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group dropdown">
+					<button type="button" class="btn btn--success btn--sm">Action</button>
+					<button type="button" class="btn btn--success btn--sm dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown__menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+				</div>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group dropdown">
+					<button type="button" class="btn btn--success btn--xs">Action</button>
+					<button type="button" class="btn btn--success btn--xs dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown__menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			<div class="sub-section">
+				<h3>Dropup Variation</h3>
+				<div class="btn-group dropup">
+					<button type="button" class="btn btn--warning">Dropup</button>
+					<button type="button" class="btn btn--warning dropdown-toggle" data-toggle="dropdown">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropup__menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 	<footer class="panel__footer">
@@ -803,17 +1234,212 @@
 	</footer>
 </section>					<section class="panel">
 	<header class="panel__header">
-		<h1>Typography</h1>
+		<h1>Navigation</h1>
 	</header>
 	<div class="panel__body">
 		<div class="panel__body__section">
-			<h1>Header 1</h1>
-			<h2>Header 2</h2>
-			<h3>Header 3</h3>
-			<h4>Header 4</h4>
-			<h5>Header 5</h5>
-			<p>This is a short paragraph with <a href="#">links</a> and other inline text elements, such as <strong>bold text</strong> and <em>italicised text</em>.</p>
-			<p>We can also <abbr title="abbreviate">abbr</abbr> text, as well as <mark>highlight</mark> and <del>delete</del> text.</p>
+			<header>
+				<h2>Tabs</h2>
+				<p>Tabbed navigation, works well with JS plugin for tabbable areas.</p>
+			</header>
+			<div class="sub-section">
+				<h3>Default Tabs</h3>
+				<ul class="nav nav--tabs" role="tablist">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Messages</a></li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Justified Tabs</h3>
+				<ul class="nav nav--tabs nav--justified" role="tablist">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Messages</a></li>
+					<li><a href="#">Another</a></li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Disabled Links</h3>
+				<ul class="nav nav--tabs" role="tablist">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li class="disabled"><a href="#">Disabled</a></li>
+					<li><a href="#">Another</a></li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Tabs with Dropdowns</h3>
+				<ul class="nav nav--tabs" role="tablist">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Dropdown <span class="caret"></span>
+						</a>
+						<ul class="dropdown__menu" role="menu">
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Link</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Another</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Pills</h2>
+				<p>Similar to tabs, but with pills.  Includes a vertically stacked option.</p>
+			</header>
+			<div class="sub-section">
+				<h3>Horizontal Pills</h3>
+				<ul class="nav nav--pills">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Messages</a></li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Stacked Pills</h3>
+				<ul class="nav nav--pills nav--stacked" style="width:300px";>
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Messages</a></li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Justified Pills</h3>
+				<ul class="nav nav--pills nav--justified">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Messages</a></li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Disabled Pills</h3>
+				<ul class="nav nav--pills">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="disabled"><a href="#">Disabled</a></li>
+					<li><a href="#">Messages</a></li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Pills with Dropdowns</h3>
+				<ul class="nav nav--pills">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Dropdown <span class="caret"></span>
+						</a>
+						<ul class="dropdown__menu" role="menu">
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Link</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Another</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Pagination</h2>
+				<p>Providing pagination links.</p>
+			</header>
+			<div class="sub-section">
+				<h3>Default</h3>
+				<ul class="pagination">
+					<li><a href="#">&laquo;</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Disabled and Active States</h3>
+				<ul class="pagination">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li><a href="#">1</a></li>
+					<li class="active"><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Sizing</h3>
+				<ul class="pagination pagination--lg">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li><a href="#">1</a></li>
+					<li class="active"><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+				<ul class="pagination">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li><a href="#">1</a></li>
+					<li class="active"><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+				<ul class="pagination pagination--sm">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li><a href="#">1</a></li>
+					<li class="active"><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Pager</h2>
+				<p>Providing quick previous and next links</p>
+			</header>
+			<div class="sub-section">
+				<h3>Default</h3>
+				<ul class="pager">
+					<li class="pager__page"><a href="#"><i class="fa fa-caret-left"></i>Previous</a></li>
+					<li class="pager__page"><a href="#">Next<i class="fa fa-caret-right"></i></a></li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Aligned Links</h3>
+				<ul class="pager">
+					<li class="pager__page pager__previous"><a href="#"><i class="fa fa-caret-left"></i>Previous</a></li>
+					<li class="pager__page pager__next"><a href="#">Next<i class="fa fa-caret-right"></i></a></li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Disabled Links</h3>
+				<ul class="pager">
+					<li class="pager__page pager__previous pager__disabled"><a href="#"><i class="fa fa-caret-left"></i>Previous</a></li>
+					<li class="pager__page pager__next"><a href="#">Next<i class="fa fa-caret-right"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Breadcrumbs</h2>
+				<p>Indicates the current page in the site structure</p>
+			</header>
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Library</a></li>
+				<li class="active">Data</li>
+			</ol>
 		</div>
 	</div>
 	<footer class="panel__footer">
@@ -824,23 +1450,663 @@
 	</footer>
 </section>					<section class="panel">
 	<header class="panel__header">
-		<h1>Typography</h1>
+		<h1>Components</h1>
 	</header>
 	<div class="panel__body">
 		<div class="panel__body__section">
-			<h1>Header 1</h1>
-			<h2>Header 2</h2>
-			<h3>Header 3</h3>
-			<h4>Header 4</h4>
-			<h5>Header 5</h5>
-			<p>This is a short paragraph with <a href="#">links</a> and other inline text elements, such as <strong>bold text</strong> and <em>italicised text</em>.</p>
-			<p>We can also <abbr title="abbreviate">abbr</abbr> text, as well as <mark>highlight</mark> and <del>delete</del> text.</p>
+			<header>
+				<h2>Alerts</h2>
+				<p>Some contextual based alerts with a close button.</p>
+			</header>
+			<div class="alert alert--warning" role="alert">
+				<button type="button" class="btn--close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<p>This is a warning alert!</p>
+				<a href="#" class="alert__link">This is a link</a>
+			</div>
+			<div class="alert alert--success fade in" role="alert">
+				<button type="button" class="btn--close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<p>This is a success alert!</p>
+				<a href="#" class="alert__link">This is a link</a>
+			</div>
+			<div class="alert alert--info fade in" role="alert">
+				<button type="button" class="btn--close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<p>This is an info alert!</p>
+				<a href="#" class="alert__link">This is a link</a>
+			</div>
+			<div class="alert alert--danger fade in" role="alert">
+				<button type="button" class="btn--close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<p>This is a danger alert!</p>
+				<a href="#" class="alert__link">This is a link</a>
+			</div>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Badges</h2>
+				<p>Used for various UI elements that require notification, such as inbox or shopping baskets.</p>
+			</header>
+			<div class="sub-section">
+				<h3>Default</h3>
+				<a href="#">Inbox <span class="badge">42</span></a>
+			</div>
+			<div class="sub-section">
+				<h3>Self collapsing</h3>
+				<p>activates <code>:empty</code> selector and applies a zero through <code>content</code></p>
+				<a href="#">Inbox <span class="badge"></span></a>
+			</div>
+			<div class="sub-section">
+				<h3>Integrated badges</h3>
+				<ul class="nav nav--pills">
+					<li class="active"><a href="#">Home <span class="badge">42</span></a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Messages <span class="badge">3</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Carousel</h2>
+				<p>Standard carousel.</p>
+			</header>
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel__indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel__items">
+					<figure class="carousel__items__item active">
+						<img src="http://placehold.it/1500x300">
+						<figcaption class="carousel__items__item__caption">Slide 1</figcaption>
+					</figure>
+					<figure class="carousel__items__item">
+						<img src="http://placehold.it/1500x300">
+						<figcaption class="carousel__items__item__caption">Slide 2</figcaption>
+					</figure>
+					<figure class="carousel__items__item">
+						<img src="http://placehold.it/1500x300">
+						<figcaption class="carousel__items__item__caption">Slide 3</figcaption>
+					</figure>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel__control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="right carousel__control" href="#carousel-example-generic" role="button" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Dropdowns</h2>
+				<p>Add dropdowns to almost anything using the js plugin</p>
+			</header>
+			<div class="sub-section">
+				<h3>Within a navbar</h3>
+				<nav class="navbar navbar--default" role="navigation">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar__header">
+							<button type="button" class="navbar__toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar__collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar__nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown__menu" role="menu">
+										<li class="dropdown__menu__header">Dropdown Header</li>
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li class="divider"></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown__menu" role="menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li class="divider"></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown__menu" role="menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li class="divider"></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown__menu" role="menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li class="divider"></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+					</nav>
+			</div>
+			<div class="sub-section">
+				<h3>Within pills</h3>
+				<ul class="nav nav--pills">
+					<li class="active"><a href="#">Regular link</a></li>
+					<li class="dropdown">
+						<a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <span class="caret"></span></a>
+						<ul id="menu1" class="dropdown__menu" role="menu" aria-labelledby="drop4">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 2 <span class="caret"></span></a>
+						<ul id="menu2" class="dropdown__menu" role="menu" aria-labelledby="drop5">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Labels</h2>
+				<p>Generic labels.</p>
+			</header>
+			<div class="sub-section">
+				<h3>Default</h3>
+				<h1>Example heading <span class="label label--default">New</span></h1>
+				<h2>Example heading <span class="label label--default">New</span></h2>
+				<h3>Example heading <span class="label label--default">New</span></h3>
+				<h4>Example heading <span class="label label--default">New</span></h4>
+				<h5>Example heading <span class="label label--default">New</span></h5>
+				<p>Example heading <span class="label label--default">New</span></p>
+			</div>
+			<div class="sub-section">
+				<h3>Variations</h3>
+				<span class="label label--default">Default</span>
+				<span class="label label--primary">Primary</span>
+				<span class="label label--success">Success</span>
+				<span class="label label--info">Info</span>
+				<span class="label label--warning">Warning</span>
+				<span class="label label--danger">Danger</span>
+			</div>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>List Groups</h2>
+				<p>Flexible and powerful component for both simple and complex lists</p>
+			</header>
+			<div class="sub-section">
+				<h3>Basic example</h3>
+				<ul class="list-group">
+					<li class="list-group__item">Cras justo odio</li>
+					<li class="list-group__item">Dapibus ac facilisis in</li>
+					<li class="list-group__item">Morbi leo risus</li>
+					<li class="list-group__item">Porta ac consectetur ac</li>
+					<li class="list-group__item">Vestibulum at eros</li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Badges</h3>
+				<ul class="list-group">
+					<li class="list-group__item">
+						<span class="badge">14</span>
+						Cras justo odio
+					</li>
+					<li class="list-group__item">
+						<span class="badge">14</span>
+						Cras justo odio
+					</li>
+					<li class="list-group__item">
+						<span class="badge">14</span>
+						Cras justo odio
+					</li>
+				</ul>
+			</div>
+			<div class="sub-section">
+				<h3>Linked items</h3>
+				<div class="list-group">
+					<a href="#" class="list-group__item active">
+					Cras justo odio
+					</a>
+					<a href="#" class="list-group__item">Dapibus ac facilisis in</a>
+					<a href="#" class="list-group__item disabled">Disabled link</a>
+					<a href="#" class="list-group__item">Porta ac consectetur ac</a>
+					<a href="#" class="list-group__item">Vestibulum at eros</a>
+				</div>
+			</div>
+			<div class="sub-section">
+				<h3>Contextual variations</h3>
+				<ul class="list-group">
+					<li class="list-group__item list-group__item--success">Dapibus ac facilisis in</li>
+					<li class="list-group__item list-group__item--info">Cras sit amet nibh libero</li>
+					<li class="list-group__item list-group__item--warning">Porta ac consectetur ac</li>
+					<li class="list-group__item list-group__item--danger">Vestibulum at eros</li>
+				</ul>
+				<div class="list-group">
+					<a href="#" class="list-group__item list-group__item--success">Dapibus ac facilisis in</a>
+					<a href="#" class="list-group__item list-group__item--info active">Active link</a>
+					<a href="#" class="list-group__item list-group__item--warning">Porta ac consectetur ac</a>
+					<a href="#" class="list-group__item list-group__item--danger">Vestibulum at eros</a>
+				</div>
+			</div>
+			<div class="sub-section">
+				<h3>Custom content</h3>
+				<div class="list-group">
+					<a href="#" class="list-group__item active">
+						<h3 class="list-group__item__heading">List group item heading</h3>
+						<p class="list-group__item__text">Some random text here.</p>
+					</a>
+					<a href="#" class="list-group__item">
+						<h3 class="list-group__item__heading">List group item heading</h3>
+						<p class="list-group__item__text">Some random text here.</p>
+					</a>
+					<a href="#" class="list-group__item">
+						<h3 class="list-group__item__heading">List group item heading</h3>
+						<p class="list-group__item__text">Some random text here.</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Media</h2>
+				<p>Styles used in blog comments, tweets etc...</p>
+			</header>
+			<div class="sub-section">
+				<h3>Default example</h3>
+				<div class="media">
+					<a class="pull-right" href="#">
+						<img src="http://placehold.it/64x64" class="media__object">
+					</a>
+					<div class="media__body">
+						<h3 class="media__body__heading">Media heading</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					</div>
+				</div>
+				<div class="media">
+				<a class="pull-left" href="#">
+					<img src="http://placehold.it/64x64" class="media__object">
+				</a>
+				<div class="media__body">
+					<h3 class="media__body__heading">Media heading</h3>
+					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					<div class="media">
+						<a class="pull-left" href="#">
+							<img src="http://placehold.it/64x64" class="media__object">
+						</a>
+						<div class="media__body">
+							<h3 class="media__body__heading">Nested media heading</h3>
+							<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="sub-section">
+				<h3>Media list</h3>
+				<ul class="media-list">
+					<li class="media">
+						<a class="pull-left" href="#">
+							<img src="http://placehold.it/64x64" class="media__object">
+						</a>
+						<div class="media__body">
+							<h3 class="media__body__heading">Media heading</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+							<div class="media">
+								<a class="pull-left" href="#">
+									<img src="http://placehold.it/64x64" class="media__object">
+								</a>
+								<div class="media__body">
+									<h3 class="media__body__heading">Nested media heading</h3>
+									<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+									<!-- Nested media object -->
+									<div class="media">
+										<a class="pull-left" href="#">
+											<img src="http://placehold.it/64x64" class="media__object">
+											</a>
+											<div class="media__body">
+												<h3 class="media__body__heading">Nested media heading</h3>
+												<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+											</div>
+										</div>
+								</div>
+							</div>
+							<div class="media">
+								<a class="pull-left" href="#">
+									<img src="http://placehold.it/64x64" class="media__object">
+								</a>
+								<div class="media__body">
+									<h3 class="media__body__heading">Nested media heading</h3>
+									<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="media">
+						<a class="pull-right" href="#">
+							<img src="http://placehold.it/64x64" class="media__object">
+						</a>
+						<div class="media__body">
+							<h3 class="media__body__heading">Media heading</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel__body__section">
+			<header>
+				<h2>Modals</h2>
+				<p>Useful for logins and other content that requires immediate focus.</p>
+			</header>
+			<div class="sub-section">
+				<h3>Live example</h3>
+				<!-- Button trigger modal -->
+				<button class="btn btn--primary" data-toggle="modal" data-target="#largeModal">
+					Large  modal
+				</button>
+				<button class="btn btn--info" data-toggle="modal" data-target="#mediumModal">
+					Medium  modal
+				</button>
+				<button class="btn btn--danger" data-toggle="modal" data-target="#smallModal">
+					Small  modal
+				</button>
+				<div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal__dialog modal__dialog--lg">
+						<div class="modal__content">
+							<header class="modal__header">
+								<button type="button" class="btn--close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+								<h3>Modal title</h3>
+							</header>
+							<div class="modal__body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="mediumModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal__dialog">
+						<div class="modal__content">
+							<header class="modal__header">
+								<button type="button" class="btn--close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+								<h3>Modal title</h3>
+							</header>
+							<div class="modal__body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal__dialog modal__dialog--sm">
+						<div class="modal__content">
+							<header class="modal__header">
+								<button type="button" class="btn--close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+								<h3>Modal title</h3>
+							</header>
+							<div class="modal__body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel__body__section">
+				<header>
+					<h2>Popovers</h2>
+					<p>A way to show secondary content in small overalys.</p>
+				</header>
+				<div class="sub-section">
+					<h3>Example</h3>
+					<button type="button" class="btn btn--danger btn--popover" id="#popover" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+				</div>
+				<div class="sub-section">
+					<h3>Four Directions</h3>
+					<button type="button" class="btn btn--default  btn--popover" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+					Popover on left
+					</button>
+
+					<button type="button" class="btn btn--default  btn--popover" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+					Popover on top
+					</button>
+
+					<button type="button" class="btn btn--default  btn--popover" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+					sagittis lacus vel augue laoreet rutrum faucibus.">
+					Popover on bottom
+					</button>
+
+					<button type="button" class="btn btn--default  btn--popover" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+					Popover on right
+					</button>
+				</div>
+				<div class="sub-section">
+					<h3>Dismiss Popovers</h3>
+					<a tabindex="0" class="btn btn--danger popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+				</div>
+
+			</div>
+			<div class="panel__body__section">
+				<header>
+					<h2>Progress Bars</h2>
+					<p>Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.</p>
+				</header>
+				<div class="sub-section">
+					<h3>Basic example</h3>
+					<div class="progress">
+						<div class="progress__bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+						<span class="sr-only">60% Complete</span>
+						</div>
+					</div>
+				</div>
+				<div class="sub-section">
+					<h3>With Labels</h3>
+					<div class="progress">
+						<div class="progress__bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+						60%
+						</div>
+					</div>
+				</div>
+				<div class="sub-section">
+					<h3>Low percentages</h3>
+					<div class="progress">
+						<div class="progress__bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+						0%
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress__bar" role="progressbar" aria-valuenow="2" aria-valuemin="2" aria-valuemax="100" style="width:2%;">
+						2%
+						</div>
+					</div>
+				</div>
+				<div class="sub-section">
+					<h3>Contextual alternatives</h3>
+					<div class="progress">
+						<div class="progress__bar progress__bar--success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+							<span class="sr-only">40% Complete (success)</span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress__bar progress__bar--info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+							<span class="sr-only">20% Complete</span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress__bar progress__bar--warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+							<span class="sr-only">60% Complete (warning)</span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress__bar progress__bar--danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							<span class="sr-only">80% Complete</span>
+						</div>
+					</div>
+				</div>
+				<div class="sub-section">
+					<h3>Striped</h3>
+					<div class="progress">
+						<div class="progress__bar progress__bar--success progress__bar--striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+							<span class="sr-only">40% Complete (success)</span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress__bar progress__bar--info progress__bar--striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+							<span class="sr-only">20% Complete</span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress__bar progress__bar--warning progress__bar--striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+							<span class="sr-only">60% Complete (warning)</span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress__bar progress__bar--danger progress__bar--striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							<span class="sr-only">80% Complete (danger)</span>
+						</div>
+					</div>
+				</div>
+				<div class="sub-section">
+					<h3>Animated</h3>
+					<div class="progress">
+						<div class="progress__bar progress__bar--striped active"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+							<span class="sr-only">45% Complete</span>
+						</div>
+					</div>
+				</div>
+				<div class="sub-section">
+					<h3>Stacked</h3>
+					<div class="progress">
+						<div class="progress__bar progress__bar--success" style="width: 35%">
+							<span class="sr-only">35% Complete (success)</span>
+						</div>
+						<div class="progress__bar progress__bar--warning progress__bar--striped" style="width: 20%">
+							<span class="sr-only">20% Complete (warning)</span>
+						</div>
+						<div class="progress__bar progress__bar--danger" style="width: 10%">
+							<span class="sr-only">10% Complete (danger)</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel__body__section">
+				<header>
+					<h2>Tooltip</h2>
+					<p>Shows little helper content</p>
+				</header>
+				<div class="sub-section">
+					<h3>Example</h3>
+					<p>Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
+	    </p>
+				</div>
+			</div>
+			<div class="panel__body__section">
+				<header>
+					<h2>Tab Content</h2>
+					<p>Quick way of showing/hiding content with tabs.</p>
+				</header>
+				<ul class="nav nav--tabs" role="tablist">
+					<li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+					<li><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+					<li><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
+					<li><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-content__pane active" id="home"><p>Now that there is the Tec-9, a spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p></div>
+					<div class="tab-content__pane" id="profile"><p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p></div>
+					<div class="tab-content__pane" id="messages"><p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p></div>
+					<div class="tab-content__pane" id="settings"><p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p></div>
+				</div>
+			</div>
+			<div class="panel__body__section">
+				<header>
+					<h2>Collapse</h2>
+					<p>Component that works like an accordion.</p>
+				</header>
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-group--default">
+						<div class="panel__heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Collapsible Group Item #1</a>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse in">
+							<div class="panel__body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						</div>
+						</div>
+					</div>
+					<div class="panel panel-group--default">
+						<div class="panel__heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Collapsible Group Item #2</a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse">
+						<div class="panel__body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						</div>
+					</div>
+					</div>
+					<div class="panel panel-group--default">
+						<div class="panel__heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Collapsible Group Item #3</a>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse">
+							<div class="panel__body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<footer class="panel__footer">
 		<ul class="labels">
 			<li class="label label--info">CSS</li>
 			<li class="label label--info">HTML</li>
+			<li class="label label--info">JS</li>
 		</ul>
 	</footer>
 </section>

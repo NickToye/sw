@@ -36,13 +36,13 @@
 		border: 1px solid $dropdown-fallback-border-color; // IE8 fallback
 		border: 1px solid $dropdown-border-color;
 		border-radius: $border-radius;
-		@include box-shadow(0 6px 12px rgba(0,0,0,.175));
+// 		@include box-shadow(0 6px 12px rgba(0,0,0,.175));
 		background-clip: padding-box;
 		// Dropdown section headers
 		&__header {
 			display: block;
 			padding: rem($rhythm-unit);
-			@include font-size($font-size-small,$line-height: true,$margin-bottom: false);
+			@include font-size($h3,$line-height: true,$margin-bottom: false);
 			color: $dropdown-header-color;
 			border-bottom: 1px solid $dropdown-divider-background-color;
 		}

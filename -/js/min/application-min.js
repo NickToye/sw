@@ -1,1 +1,40 @@
-$(function(){$(".matchHeight").matchHeight(),$(".block--catalog article").matchHeight(),initScrollToTop=function(){$("#back-top").on("click",function(t){return t.preventDefault(),$("html, body").animate({scrollTop:0},900)})},initScrollToTop(),$(".dribbble-shots").hide(),jQuery(window).load(function(){$(".dribbble-shots").fadeIn()});var t="pixelscode";$.jribbble.getShotsByPlayerId(t,function(t){var o=t.shots,i="";$(o).each(function(t,o){i+='<div class="dribbble-shots__shot">',i+='<a href="'+o.url+'" target="_blank"><img src="'+o.image_url+'"></a>',i+="</div>"}),$(".dribbble-shots").html(i)},{per_page:4}),$('[data-toggle="tooltip"]').tooltip()});
+$(function(){
+
+
+	// Scroll Top
+	initScrollToTop = function() {
+	$("#back-top").on('click', function(e) {
+		e.preventDefault();
+		return $("html, body").animate({
+			scrollTop: 0
+			}, 900);
+		});
+	};
+	initScrollToTop();
+
+	$('.dribbble-shots').hide();
+	$('.instagram > ul').hide();
+	jQuery(window).load(function(){
+		$('.dribbble-shots').fadeIn();
+		$('.instagram > ul').fadeIn();
+	});
+
+	// Buttons
+	$('#loading-example-btn')
+	.click(function () {
+		var btn = $(this)
+		btn.button('loading')
+		setTimeout(function () {
+			btn.button('reset')
+		}, 3000)
+	});
+
+	// Popovers
+	$('[data-toggle="popover"]').popover()
+
+    // Tooltips
+    $('[data-toggle="tooltip"]').tooltip()
+
+});
+
+

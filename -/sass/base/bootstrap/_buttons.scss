@@ -23,10 +23,8 @@
 	background: $btn-default-background-color;
 	color: $btn-default-color;
 	text-transform: uppercase;
-	@include button-size(rem($rhythm-unit), rem($rhythm-unit), rem($h3), rem($rhythm-unit), $button-radius);
+	@include button-size(rem($rhythm-unit), rem($rhythm-unit), $p, rem($rhythm-unit), $button-radius);
 	@include user-select(none);
-	padding-top: rem($rhythm-unit)*1.15;
-	padding-bottom: rem($rhythm-unit)*.85;
 	&,
 	&:active,
 		&.active {
@@ -105,14 +103,14 @@
 	}
 	// Button Sizes
 	&--lg {
-		@include button-size(rem($large-rhythm-unit), rem($large-rhythm-unit), rem($font-size-large), rem($large-rhythm-unit), $border-radius-large);
+		@include button-size(rem($large-rhythm-unit), rem($large-rhythm-unit), $font-size-large, rem($large-rhythm-unit), $border-radius-large);
 		 i.fa { padding-right: rem($large-rhythm-unit);}
 	}
 	&--sm {
-		@include button-size(rem($small-rhythm-unit), rem($small-rhythm-unit), rem($font-size-small), rem($small-rhythm-unit), $border-radius-small);
+		@include button-size(rem($small-rhythm-unit), rem($small-rhythm-unit), $font-size-small, rem($small-rhythm-unit), $border-radius-small);
 	}
 	&--xs {
-		@include button-size(rem($extra-small-rhythm-unit), rem($extra-small-rhythm-unit), rem($font-size-extra-small), rem($small-rhythm-unit), $border-radius-small);
+		@include button-size(rem($extra-small-rhythm-unit), rem($extra-small-rhythm-unit), $font-size-extra-small, rem($small-rhythm-unit), $border-radius-small);
 	}
 	// Block button
 	&--block {

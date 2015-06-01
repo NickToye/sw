@@ -106,18 +106,18 @@
 			border-collapse: separate;
 			width: 100%;
 			&__input-group-lg {
-				.controls__control, .input-group__addon, .input-group--btn {
+				.controls__control, .input-group__addon, .input-group__btn {
 					@extend .input-lg;
 					@include font-size($font-size-large, $line-height: true, $margin-bottom: false);
 				}
 			}
 			&__input-group-sm {
-				.controls__control, .input-group__addon, .input-group--btn {
+				.controls__control, .input-group__addon, .input-group__btn {
 					@extend .input-sm;
 					@include font-size($font-size-small, $line-height: true, $margin-bottom: false);
 				}
 			}
-			&__addon, &--btn,.controls__control {
+			&__addon, &__btn,.controls__control {
 				position: relative;
 				display: table-cell;
 				margin-bottom: 0;
@@ -126,21 +126,22 @@
 				}
 				&:first-child { @include border-right-radius(0); }
 				&:last-child { @include border-left-radius(0); }
-				&:first-child > .btn { @include border-right-radius(0); }
+				&:first-child > .btn { @include border-right-radius(0); margin-right: -1px; }
 				&:last-child > .btn { @include border-left-radius(0); }
 				&:first-child > .btn:not(:first-child) { @include border-left-radius(0);}
 				&:last-child > .btn:not(:last-child):not(.dropdown-toggle) { @include border-right-radius(0);}
 			}
-			&__addon, &--btn {
+			&__addon, &__btn {
 				width: 1%;
 				white-space: nowrap;
 				vertical-align: middle;
 			}
-			&--btn {
+			&__btn {
 				position: relative;
 				font-size: 0;
-				&:first-child > .btn { border-right: 0;}
-				&:last-child > .btn { border-left: 0;}
+// 				> .btn { border: 0;}
+// 				&:first-child > .btn { border-right: 0;}
+// 				&:last-child > .btn { border-left: 0;}
 			}
 			&__addon {
 				padding: rem($rhythm-unit)/2 rem($rhythm-unit);
@@ -163,7 +164,7 @@
 		// input,select,textarea,checkbox,radiobox
 		&__control {
 			// normalise form controls
-			height: rem($input-height-base);
+// 			height: rem($input-height-base);
 
 			&[type="search"] { @include box-sizing(border-box); }
 			&[type="radio"],&[type="checkbox"] {

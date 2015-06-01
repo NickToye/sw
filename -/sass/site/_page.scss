@@ -18,6 +18,9 @@ body {
 	.navbar-fixed-top & {
 		margin-top: 0;
 	}
+	body.styles & {
+		max-width: 1000px;
+	}
 }
 
 .content {

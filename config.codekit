@@ -151,12 +151,12 @@
 		"outputAbbreviatedPath": "\/-\/js\/min\/application-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/-\/js\/bootstrap\/affix.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/-\/js\/bootstrap\/affix.js",
 		"outputAbbreviatedPath": "\/-\/js\/bootstrap\/min\/affix-min.js",
@@ -167,7 +167,7 @@
 		},
 	"\/-\/js\/bootstrap\/alert.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/-\/js\/bootstrap\/alert.js",
 		"outputAbbreviatedPath": "\/-\/js\/bootstrap\/min\/alert-min.js",
@@ -178,7 +178,7 @@
 		},
 	"\/-\/js\/bootstrap\/button.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/-\/js\/bootstrap\/button.js",
 		"outputAbbreviatedPath": "\/-\/js\/bootstrap\/min\/button-min.js",
@@ -189,7 +189,7 @@
 		},
 	"\/-\/js\/bootstrap\/carousel.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/-\/js\/bootstrap\/carousel.js",
 		"outputAbbreviatedPath": "\/-\/js\/bootstrap\/min\/carousel-min.js",
@@ -200,7 +200,7 @@
 		},
 	"\/-\/js\/bootstrap\/collapse.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/-\/js\/bootstrap\/collapse.js",
 		"outputAbbreviatedPath": "\/-\/js\/bootstrap\/min\/collapse-min.js",
@@ -211,7 +211,7 @@
 		},
 	"\/-\/js\/bootstrap\/dropdown.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/-\/js\/bootstrap\/dropdown.js",
 		"outputAbbreviatedPath": "\/-\/js\/bootstrap\/min\/dropdown-min.js",
@@ -222,7 +222,7 @@
 		},
 	"\/-\/js\/bootstrap\/lightbox.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/-\/js\/bootstrap\/lightbox.js",
 		"outputAbbreviatedPath": "\/-\/js\/bootstrap\/min\/lightbox-min.js",
@@ -255,7 +255,7 @@
 		},
 	"\/-\/js\/bootstrap\/modal.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/-\/js\/bootstrap\/modal.js",
 		"outputAbbreviatedPath": "\/-\/js\/bootstrap\/min\/modal-min.js",
@@ -266,7 +266,7 @@
 		},
 	"\/-\/js\/bootstrap\/popover.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/-\/js\/bootstrap\/popover.js",
 		"outputAbbreviatedPath": "\/-\/js\/bootstrap\/min\/popover-min.js",
@@ -277,7 +277,7 @@
 		},
 	"\/-\/js\/bootstrap\/scrollspy.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/-\/js\/bootstrap\/scrollspy.js",
 		"outputAbbreviatedPath": "\/-\/js\/bootstrap\/min\/scrollspy-min.js",
@@ -288,7 +288,7 @@
 		},
 	"\/-\/js\/bootstrap\/tab.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/-\/js\/bootstrap\/tab.js",
 		"outputAbbreviatedPath": "\/-\/js\/bootstrap\/min\/tab-min.js",
@@ -299,7 +299,7 @@
 		},
 	"\/-\/js\/bootstrap\/tooltip.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/-\/js\/bootstrap\/tooltip.js",
 		"outputAbbreviatedPath": "\/-\/js\/bootstrap\/min\/tooltip-min.js",
@@ -310,7 +310,7 @@
 		},
 	"\/-\/js\/bootstrap\/transition.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/-\/js\/bootstrap\/transition.js",
 		"outputAbbreviatedPath": "\/-\/js\/bootstrap\/min\/transition-min.js",
@@ -459,8 +459,8 @@
 		"outputAbbreviatedPath": "\/-\/js\/min\/scripts-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/-\/sass\/base\/_bootstrap.scss": {
 		"createSourceMap": 1,
@@ -2641,6 +2641,86 @@
 	],
 "lastSavedByUser": "Nick Toye",
 "manualImportLinks": {
+	"\/-\/js\/scripts.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/-\/js\/bootstrap\/affix.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/-\/js\/bootstrap\/alert.js",
+			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/-\/js\/bootstrap\/button.js",
+			"position": 2,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/-\/js\/bootstrap\/carousel.js",
+			"position": 3,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/-\/js\/bootstrap\/transition.js",
+			"position": 4,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/-\/js\/bootstrap\/collapse.js",
+			"position": 5,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/-\/js\/bootstrap\/dropdown.js",
+			"position": 6,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/-\/js\/bootstrap\/lightbox.js",
+			"position": 7,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/-\/js\/bootstrap\/modal.js",
+			"position": 8,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/-\/js\/bootstrap\/tooltip.js",
+			"position": 9,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/-\/js\/bootstrap\/popover.js",
+			"position": 10,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/-\/js\/bootstrap\/scrollspy.js",
+			"position": 11,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/-\/js\/bootstrap\/tab.js",
+			"position": 12,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
